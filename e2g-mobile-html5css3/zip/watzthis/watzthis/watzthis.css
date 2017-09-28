@@ -1,14 +1,34 @@
-body {
-      font-family: sans-serif;
-}
-h1 {
-      background-color: #DBEC77;
-      color: cornflowerblue;
-}
-h2 {
-      background-color: pink;
-      color: blue;
-}
+/* stylesheet.css */
+/* Style rule for the body element */
+body{
+      /* Default font styling */
+      font: 12pt Arial, Helvetica, Sans-Serif;
+      color: rgb(38, 38, 179);
+      width:900px;
+      margin:0 auto;
+      background-color:white;  
+      border:solid 2px #1A164C;
+      border-radius:20px;
+      box-shadow:8px 8px 8px black;
+      padding:16px;
+    }
+    /* Style for h1 headings */
+    h1{
+      font:30px Arial Black, Sans-Serif;
+      text-shadow:-1px -1px 1px #6E62A4;
+      text-align:center;
+    }
+    /* Style for h2 headings */
+    h2{
+      font:small-caps bold 16px Arial #201D1D, Gadget, Sans-Serif;
+      text-shadow:-1px -1px 1px #6E62A4;
+
+    }
+    /* Style for paragraphs */
+    p{
+      line-height:1.5;
+    }
+    
 
 footer {
       font-family: Times;
