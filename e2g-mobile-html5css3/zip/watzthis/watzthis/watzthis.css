@@ -1,0 +1,23 @@
+body {
+      font-family: sans-serif;
+}
+h1 {
+      background-color: #DBEC77;
+      color: cornflowerblue;
+}
+h2 {
+      background-color: pink;
+      color: blue;
+}
+
+footer {
+      font-family: Times;
+      font-size-adjust: .50;
+      font-style: italic;
+}
+figcaption { 
+      /* remove font-family or set to sans-serif and font-size not used */
+      font-family: Times;
+      font-size-adjust: .50;
+}
+/* comment */
