@@ -9,7 +9,7 @@ body{
     }
       /* Style rule for the wrapper div */
     #wrapper{ /* bubble and content inside bubble */
-      width:900px;
+      /*width:320px;*/
       margin:0 auto;
       background-color:white;  
       border:solid 2px #1A164C;
