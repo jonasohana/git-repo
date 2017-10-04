@@ -100,7 +100,7 @@
       font-family:arial, helvetica;
       text-align: center;
     }
-
+    #container {}
     #directions, #flashlight, #danceparty #sound {
       margin:4px;
     }
@@ -126,25 +126,23 @@
     </ol>
     </div>
      
-    <div id="container">
+    <div id=container">
    
-        <div id=flashlight>
-        <input type="button" value="OFF" onclick="flip(0);">
-        <input type="button" value="ON" onclick="flip(1);">
-        <input type="button" value="RED" onclick="flip(2);">
-        </div>
-
-        <div id="danceparty">
-            <input type="button" id="AUTO" class=bigButton" value="AUTO" onclick="doAutoFlip((Math.random() * 350) + 100);">
-            <input type="button" id="STOP" class=bigButton" value="STOP" onclick="stopFlip();">
-        </div>
-        
-        <div id="sound">   
-            <button onclick="playAudio()" type="bigButton">Play Audio</button>
-            <button onclick="pauseAudio()" type="bigButton">Pause Audio</button>
-        </div> 
-    
+    <div id=flashlight>
+    <input type="button" value="OFF" onclick="flip(0);">
+    <input type="button" value="ON" onclick="flip(1);">
+    <input type="button" value="RED" onclick="flip(2);">
     </div>
+
+    <div id="danceparty">
+        <input type="button" id="AUTO" class=bigButton" value="AUTO" onclick="doAutoFlip((Math.random() * 350) + 100);">
+        <input type="button" id="STOP" class=bigButton" value="STOP" onclick="stopFlip();">
+    </div>
+    
+    <div id="sound">   
+        <button onclick="playAudio()" type="bigButton">Play Audio</button>
+        <button onclick="pauseAudio()" type="bigButton">Pause Audio</button>
+    </div>    
 
 
 

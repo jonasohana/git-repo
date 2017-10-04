@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-    
 
 <html>
 <head>
@@ -11,19 +10,6 @@
     <meta name="MobileOptimized" content="320"/>
     <meta name="viewport" content="width=device-width,width-scale=1.0">
     
-        <!--
-        Audio play() Method
-        https://www.w3schools.com/jsref/met_audio_play.asp
-        
-        Trance samples
-        https://www.myloops.net/download-free-trance-samples
-        
-        Audio Converter.
-        http://www.audacityteam.org/download/
-        -->
-        
-        
-
     <audio id="myAudio">
         <source src="audio/trance=low.ogg" type="audio/ogg">
         <source src="audio/trance-low.mp3" type="audio/mpeg">
@@ -41,18 +27,10 @@
     light[0] = 'black';
     light[1] = 'white';
     light[2] = 'red';
-    light[3] = 'darkviolet';
-    light[4] = 'hotpink';
-    light[5] = 'khaki';
-    light[6] = 'peachpuff';
-    light[7] = 'aqua';
-    light[8] = 'tomato';
-    light[9] = 'slateblue';
-    light[10] = 'mediumvioletred';
-    light[11] = 'bluevoilet';
-    light[12] = 'violet';
-    light[13] = 'fuchsia';
-    light[14] = 'darkblue';
+    light[3] = 'blue';
+    light[4] = 'green';
+    light[5] = 'orange';
+    /*light[6] = 'violet';*/
     
     /* Sound element */
     var sound = document.getElementById("myAudio"); 
@@ -100,7 +78,7 @@
       font-family:arial, helvetica;
       text-align: center;
     }
-
+    #container {}
     #directions, #flashlight, #danceparty #sound {
       margin:4px;
     }
@@ -126,29 +104,26 @@
     </ol>
     </div>
      
-    <div id="container">
+    <div id=container">
    
-        <div id=flashlight>
-        <input type="button" value="OFF" onclick="flip(0);">
-        <input type="button" value="ON" onclick="flip(1);">
-        <input type="button" value="RED" onclick="flip(2);">
-        </div>
-
-        <div id="danceparty">
-            <input type="button" id="AUTO" class=bigButton" value="AUTO" onclick="doAutoFlip((Math.random() * 350) + 100);">
-            <input type="button" id="STOP" class=bigButton" value="STOP" onclick="stopFlip();">
-        </div>
-        
-        <div id="sound">   
-            <button onclick="playAudio()" type="bigButton">Play Audio</button>
-            <button onclick="pauseAudio()" type="bigButton">Pause Audio</button>
-        </div> 
-    
+    <div id=flashlight>
+    <input type="button" value="OFF" onclick="flip(0);">
+    <input type="button" value="ON" onclick="flip(1);">
+    <input type="button" value="RED" onclick="flip(2);">
     </div>
+
+    <div id="danceparty">
+        <input type="button" id="AUTO" class=bigButton" value="AUTO" onclick="doAutoFlip((Math.random() * 350) + 100);">
+        <input type="button" id="STOP" class=bigButton" value="STOP" onclick="stopFlip();">
+    </div>
+    
+    <div id="sound">   
+        <button onclick="playAudio()" type="bigButton">Play Audio</button>
+        <button onclick="pauseAudio()" type="bigButton">Pause Audio</button>
+    </div>    
 
 
 
 
 </body>
 </html>
-
