@@ -4,6 +4,11 @@ body{
       /* Default font styling */
       font: 12pt Arial, Helvetica, Sans-Serif;
       color: rgb(38, 38, 179);
+      background-color:#A7A75C;
+      background-image:url(pix/bkgwood.jpg);
+    }
+      /* Style rule for the wrapper div */
+    #wrapper{ /* bubble and content inside bubble */
       width:900px;
       margin:0 auto;
       background-color:white;  
