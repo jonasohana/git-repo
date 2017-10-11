@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>e2g - Student</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1"> 
+   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+   <script>
+   $(document).bind('mobileinit',function(){
+     $.mobile.pushStateEnabled = false;
+   });
+   $('#someButton').click(function() {
+    window.location.href = 'www.jquery.com';
+    return false;
+   });
+   </script>
+
+  <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"> </script>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+</head>
+
+<body>
+  <div data-role="page" id="e2g-home">
+      <header data-role="header">
+          <h1>e2g My Classes</h1>
+      </header>
+
+      <section data-role="content">
+          <h1>Welcome to jQuery Mobile</h1>
+              <p>This is a paragraph of text.</p>
+          <h2>This is an h2</h2>
+          <ul data-role="listview">
+              <li><a href="#MobileHTML5CSS3-Page">Mobile HTML5 CSS3</a></li>
+              <li><a href="#IntroCSS3HTML5-Page">Introduction CSS3 and HTML5</a></li>                  
+          </ul>
+        </section><!-- /content -->
+  </div> <!-- End page -->
+
+
+  <div data-role="page" id="MobileHTML5CSS3-Page">
+    <header data-role="header">
+      <h1>Mobile HTML5 CSS3 Class</h1>
+      <a href="#e2g-home" class="ui-btn-left" data-icon="home" data-iconpos="notext" 
+        data-direction="reverse">Home</a> 
+    </header>
+    <section data-role="content">
+        <h1>lesson list</h1>
+
+            
+        <ul data-role="listview" data-ajax="false" data-inset="true" >
+            <li data-role="list-divider">links to external website(s) - Please use the back button to return</li>
+            <li><a href="e2g-mobile-html5/WatzThis-Index-Lesson2/WatzThis/index.html" rel="external"
+                >Lesson 2: Building Your First Mobile App - WatzThis index.html </a></li>
+            <li><a href="e2g-mobile-html5/WatzThis-docs-Lesson4/watzthis/docs.html" rel="external"
+                >Lesson 4: Formatting HTML5 With CSS3 - WatzThis  Docs.html</a></li>   
+            <li><a href="e2g-mobile-html5/L5-WatzThis-colortext/Lesson5-watzthis-color-text.html" rel="external"
+                >Lesson 5: ? - WatzThis - color text</a></li>      
+            <li><a href="e2g-mobile-html5/WatzThis-jquery-Lesson6/Lesson6-watzthisdoc-jquerychp123.html" rel="external"
+                >Lesson 6: JQuery - WatzThis</a></li>   
+
+        </ul>
+
+    </section> <!-- content within page -->
+    </div>
+  </div> <!-- End page -->
+
+</body>
+</html>
