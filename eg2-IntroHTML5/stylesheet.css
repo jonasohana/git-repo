@@ -2,9 +2,8 @@
 /* Style rule for the body element */
 body{
   background-color:yellow;
-  /* background-image:url(pix/bkgleather2.jpg); */
-  background-image:url(pix/bkgwood.jpg);
-  /* Default font styling */
+  background-image:url(pix/bkgleather2.jpg);
+/* Default font styling */
   font: 10pt Arial, Helvetica, Sans-Serif;
   color:#5d3f25;
 }
@@ -16,7 +15,6 @@ body{
   border:solid 2px #4c2e16;
   border-radius:20px;
   box-shadow:8px 8px 8px black;
-  padding:16px;
 }
 /* Style for h1 headings */
 h1{
@@ -34,11 +32,50 @@ p{
   line-height:1.5;
 }
 
-/* Create raised appearance with border, rounded corners, and shadow */
-/* Works with images, tables, and block elements (div, p, and headings) */
-.raised{
-	border:solid 1px gray;
-	border-radius: 5px;
-	box-shadow:5px 5px 5px gray;
-  }
-  
+/* Style Classes */
+.hilite {
+  background-color: pink;
+}
+/* raised apperance */
+/* works for images, tables, and block elements */
+.raised {
+  border:solid 3px grey;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px grey;
+}
+
+img.left {
+  float: left;
+  width:30%; /* from left magin - 30% of the way inside */
+  margin-right: 10px /* right side margin 10px */
+
+
+}
+img.right {
+  float: right;
+  width:30%; /* from left magin - 30% of the way inside */
+  margin-right: 10px /* right side margin 10px */
+}
+
+.centerall {
+  text-align: center;
+  /* clear floating */
+  clear:both;
+}
+
+a:link{
+  color:darkblue;
+}
+
+a:visited{
+  color: red;
+}
+a:hover{
+  background-color:#d354b7;
+  color:#c5cf2e;
+}
+
+a:active{
+  background-color:#294ccc;
+  color:#c0ad9a;
+}

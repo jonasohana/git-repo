@@ -1,0 +1,44 @@
+/* stylesheet.css */
+/* Style rule for the body element */
+body{
+  background-color:yellow;
+  /* background-image:url(pix/bkgleather2.jpg); */
+  background-image:url(pix/bkgwood.jpg);
+  /* Default font styling */
+  font: 10pt Arial, Helvetica, Sans-Serif;
+  color:#5d3f25;
+}
+/* Style rule for the wrapper div */
+#wrapper{
+  width:900px;
+  margin:0 auto;
+  background-color:white;  
+  border:solid 2px #4c2e16;
+  border-radius:20px;
+  box-shadow:8px 8px 8px black;
+  padding:16px;
+}
+/* Style for h1 headings */
+h1{
+  font:italic small-caps bold 24px Arial Black, Gadget, Sans-Serif;
+  text-shadow:-2px -2px 2px #a48362;
+  text-align:center;
+}
+/* Style for h2 headings */
+h2{
+  font:italic small-caps bold 18px Arial Black, Gadget, Sans-Serif;
+  text-shadow:-1px -1px 1px #a48362;
+}
+/* Style for paragraphs */
+p{
+  line-height:1.5;
+}
+
+/* Create raised appearance with border, rounded corners, and shadow */
+/* Works with images, tables, and block elements (div, p, and headings) */
+.raised{
+	border:solid 1px gray;
+	border-radius: 5px;
+	box-shadow:5px 5px 5px gray;
+  }
+  
