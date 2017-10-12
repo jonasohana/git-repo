@@ -33,3 +33,12 @@ h2{
 p{
   line-height:1.5;
 }
+
+/* Create raised appearance with border, rounded corners, and shadow */
+/* Works with images, tables, and block elements (div, p, and headings) */
+.raised{
+	border:solid 1px gray;
+	border-radius: 5px;
+	box-shadow:5px 5px 5px gray;
+  }
+  
