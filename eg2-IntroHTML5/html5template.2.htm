@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title></title>
-  <link href="stylesheet.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-
 <div id="wrapper">
     <h1>Sample h1 Heading</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -36,25 +28,23 @@
          <br>Sorry, your browser doesn't play mp3 or ogg videos. Consider updating your browser.
          </audio>
      </div><!-- End centering div -->
-<table >
-    <tr>
-        <th> header 1</th>
-        <th> header 2</th>
-        <th> header 3</th>
-    </tr>
+     <p> </p>
+     <video controls poster="pix/airheads.png" > 
+         <source src="pix/airheads.mp4" type="video/mp4" />
+         <source src="pix/airheads.ogv" type="video/ogg" />
+         <source src="pix/airheads.webm" type="video/webm" />
+         Sorry - you browswer does not support this video type.
 
-    <tr>
-        <td> data 1 r2</td>
-        <td> data 2 r2</td>
-        <td> data 3 r2</td>
-    </tr>
-    <tr>
-        <td> data 1 r3</td>
-        <td> data 2 r3</td>
-        <td> data 3 r3</td>
-    </tr>
+     </video>
+    <p></p>
 
-    </table>
+     <video controls>
+        <source src="pix/slideshow.mp4" type="video/mp4" />
+        <source src="pix/slideshow.ogv" type="video/ogg" />
+        <source src="pix/slideshow.webm" type="video/webm" />
+        Sorry, your browser does not support HTML5 video. Consider updating to a newer browser.
+     </video>
+
  </div><!-- End wrapper -->
 </body>
 </html>

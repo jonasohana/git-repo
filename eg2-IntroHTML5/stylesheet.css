@@ -2,7 +2,7 @@
 /* Style rule for the body element */
 body{
   background-color:yellow;
-  background-image:url(pix/bkgleather2.jpg);
+  background-image:url(pix/bkgwood.jpg);
 /* Default font styling */
   font: 10pt Arial, Helvetica, Sans-Serif;
   color:#5d3f25;
@@ -78,4 +78,16 @@ a:hover{
 a:active{
   background-color:#294ccc;
   color:#c0ad9a;
+}
+
+
+table {
+  /* Center the table, and put one blank line above and below */
+  margin: 1em auto; 
+  /* Remove spacing between cells */
+  border-collapse: collapse;
+}
+th, td {
+  /* Borders around cells */
+  border: solid 1px gray;
 }
