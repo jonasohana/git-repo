@@ -1,30 +1,14 @@
 /* stylesheet.css */
 /* Style rule for the body element */
-<<<<<<< HEAD
 body{
   background-color:yellow;
   /* background-image:url(pix/bkgleather2.jpg); */
   background-image:url(pix/bkgwood.jpg);
   /* Default font styling */
-=======
-body {
-  background-color: yellow;
-  background-image: url(pix/bkgleather2.jpg); /* Default font styling */
->>>>>>> a2715ca98046b84ee6f8c8dfeb8a27c7922f03ed
   font: 10pt Arial, Helvetica, Sans-Serif;
   color: #5d3f25;
 }
 /* Style rule for the wrapper div */
-<<<<<<< HEAD
-#wrapper{
-  width:900px;
-  margin:0 auto;
-  background-color:white;  
-  border:solid 2px #4c2e16;
-  border-radius:20px;
-  box-shadow:8px 8px 8px black;
-  padding:16px;
-=======
 #wrapper {
   width: 900px;
   margin: 0 auto;
@@ -32,7 +16,6 @@ body {
   border: solid 2px #4c2e16;
   border-radius: 20px;
   box-shadow: 8px 8px 8px black;
->>>>>>> a2715ca98046b84ee6f8c8dfeb8a27c7922f03ed
 }
 /* Style for h1 headings */
 h1 {
@@ -49,17 +32,6 @@ h2 {
 p {
   line-height: 1.5;
 }
-<<<<<<< HEAD
-
-/* Create raised appearance with border, rounded corners, and shadow */
-/* Works with images, tables, and block elements (div, p, and headings) */
-.raised{
-	border:solid 1px gray;
-	border-radius: 5px;
-	box-shadow:5px 5px 5px gray;
-  }
-  
-=======
 /* === Style classes === */
 /* Highlight any span of text */
 .hilite {
@@ -155,4 +127,3 @@ table{
 
 
 
->>>>>>> a2715ca98046b84ee6f8c8dfeb8a27c7922f03ed
