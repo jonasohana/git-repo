@@ -1,0 +1,23 @@
+/* Styling for the table as a whole */
+table {
+   /* Remove gaps between table cells */
+   border-collapse: collapse; 
+   /* Font size, family, and color */
+   font: 12pt Times, "Times New Roman" , Serif;
+   color: #4c2e16; 
+   /* top/bottom and side margins (auto for centering) */
+   margin: 1em auto;
+ }
+
+ /* Table header cells */
+th {
+   background-color: #4c2e16;
+   color: white;
+ }
+
+  /* Header and data cells */ 
+th, td {
+   border: solid 1px #5d3f25;
+   padding: 2px 4px;
+ }
+ 
