@@ -3,7 +3,9 @@
 body {
   background-color: yellow;
   background-image: url(pix/bkgleather2.jpg); /* Default font styling */
-  font: 10pt Arial, Helvetica, Sans-Serif;
+
+  font-size: 40px/80px Impact, Gadget, Fantasy;
+  /*font: 10pt Arial, Helvetica, Sans-Serif;*/
   color: #5d3f25;
 }
 
@@ -23,6 +25,23 @@ body {
 h1, h2, h3, h4, h5, h6{
   margin:0;
 }
+
+/* Styling for the page heade */
+header {
+  height: 80px;
+  font-size: 40px/80px Impact, Gadget, Fantasy;
+  text-align: center;
+  /* backgound color */
+  background-color: #d0ae8e;
+  background-image:url(pix/headerlogo.png);
+  background-repeat: no-repeat;
+   /* indent 10px and center vertically */
+  background-position: 10px center; 
+  /* round top corners */
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
 
 /* Style for h1 headings */
 h1 {

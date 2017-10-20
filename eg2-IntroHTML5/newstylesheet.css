@@ -1,0 +1,22 @@
+/* stylesheet.css */
+/* Style rule for the body element */
+body{
+    background-color:yellow;
+    /*background-image:url(pix/bkgleather2.jpg);*/
+}
+/* Style rule for the wrapper div */
+#wrapper{
+   width:300px;
+   margin:0 auto;
+   background-color:white;  
+   border: solid 5px silver;
+    /* upperleft/lowerright upperright/lowerleft */
+   border-radius: 10px;
+
+   /* x y blur spread color */
+   box-shadow: 10px 10px 2px 8px #777;
+
+   
+}
+
+
