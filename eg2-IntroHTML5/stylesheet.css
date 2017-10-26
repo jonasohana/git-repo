@@ -3,9 +3,7 @@
 body {
   background-color: yellow;
   background-image: url(pix/bkgleather2.jpg); /* Default font styling */
-
-  font-size: 40px/80px Impact, Gadget, Fantasy;
-  /*font: 10pt Arial, Helvetica, Sans-Serif;*/
+  font: 10pt Arial, Helvetica, Sans-Serif;
   color: #5d3f25;
 }
 
@@ -14,6 +12,7 @@ body {
   width: 90%;
   min-width:600px;
   max-width:1200px;
+  /* above wrapper */
   margin: 1em auto;
   background-color: white;
   border: solid 2px #4c2e16;
@@ -23,25 +22,8 @@ body {
 
 /* Eliminate default margins for all heading types */
 h1, h2, h3, h4, h5, h6{
-  margin:0;
+  margin:0px;
 }
-
-/* Styling for the page heade */
-header {
-  height: 80px;
-  font-size: 40px/80px Impact, Gadget, Fantasy;
-  text-align: center;
-  /* backgound color */
-  background-color: #d0ae8e;
-  background-image:url(pix/headerlogo.png);
-  background-repeat: no-repeat;
-   /* indent 10px and center vertically */
-  background-position: 10px center; 
-  /* round top corners */
-  border-top-left-radius: 18px;
-  border-top-right-radius: 18px;
-}
-
 
 /* Style for h1 headings */
 h1 {
@@ -59,6 +41,7 @@ h2 {
 p {
 line-height:1.5;
 margin-top:0;
+padding-left: 10px; 
 }
 
 /* === Style classes === */
@@ -96,71 +79,46 @@ img.right {
   clear: both;
 }
 
-/* ==== Styles for links and link states. === */
-/* Unvisited links */
-a:link {
-  color: #0c391c;
-}
-
-/* Visited links */
-a:visited {
-  color: #af4600;
-}
-
-/* Mouse pointer on link */
-a:hover {
-  background-color: #bc9f81;
-  color: #1e2953;
-}
-
-/* Mouse pointer on link and left button down */
-a:active {
-  background-color: #1e2953;
-  color: #bc9f81;
-}
-
-/* ==== Styling for tables ==== */
-
-/* Styling for the table as a whole */
+/* table styling */ 
 table {
-  /* Remove gaps between table cells */
-  border-collapse: collapse; 
-  /* Font size, family, and color */
-  font: 12pt Times, "Times New Roman" , Serif;
-  color: #4c2e16; 
-  /* top/bottom and side margins (auto for centering) */
-  margin: 1em auto;
+  /* collapse between cells */
+  border-collapse: collapse;
+  margin: 0px auto; 
 }
 
-/* Table header cells */
+th, td {
+  font: 1em times, times new roman, serif; 
+  border: solid 1px #3d190a;
+  padding: 2px 4px;
+}
 th {
-  background-color: #4c2e16;
+  /* center text */
+  text-align:center;
+  /* white text brown background */
+  background-color: #3d190a;
   color: white;
 }
 
-/* Header and data cells */
-th, td {
-  border: solid 1px #5d3f25;
-  padding: 2px 4px;
+td {
+  color: #3d190a;
 }
 
-/* Give even-numbered rows tan background color */
-tr:nth-child(even) {
-  background-color: #c6a586;
-}
-
-/* Right align content in column 2 data cells */
 td:nth-child(2) {
+  /* 2nd column - right */
   text-align: right;
 }
 
-/* Center content in column 3 data cells */
 td:nth-child(3) {
+  /* 3rd column - center */
   text-align: center;
 }
 
-/* Highlight table row on hover */
-tr:hover{
-  background-color:#ff6;
-  cursor:default;
+tr:nth-child(even) {
+/* odd row brown background + header counts are a row  */
+background-color: #a5705c;
+}
+
+tr:hover {
+/* hover over - yellow */
+  background-color: yellow;
 }
