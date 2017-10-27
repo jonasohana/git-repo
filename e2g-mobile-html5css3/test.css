@@ -1,0 +1,14 @@
+body {
+   font-color: yellow;
+}
+
+/* ID selector */
+#top {
+   backround-color: blue;
+}
+
+
+/* class */
+.intro {
+   background-color: red;
+}
