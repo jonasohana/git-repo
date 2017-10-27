@@ -32,7 +32,6 @@ body{
 h1 h2 h3 h4 h5 h6 {
   margin: 0px;
 }
-/* styling for page header */
 
 /* Styling for page header */
 header{ 
@@ -45,12 +44,19 @@ header{
   background-color: #d0ae8e; 
   background-image:url(pix/headerlogo.png);
   background-repeat: no-repeat;
-  background-position: 10px center;
+  /* indent horizontal(x) 10px and center verticall(y) */
+  background-position: 10px center; 
   /* Round the top corners */
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
  }
- 
+
+ article {
+   padding: 10px;
+ }
+
+
+
 /* Style for h1 headings */
 h1{
   font:italic small-caps bold 24px Arial Black, Gadget, Sans-Serif;
@@ -120,14 +126,15 @@ p {
   font-size: 13px;
 }
 
-table{
+article table{
 /* Center the table, and put one blank line above and below */
 margin:1em auto;
 /* Remove spacing between cells */
  border-collapse: collapse;
 }
 
-th, td{
+article th, 
+article td{
 /* Borders around all cells. */
  border:solid 1px gray;
   /* Add 2px top and bottom padding, 4px side padding in each cell */
@@ -135,27 +142,42 @@ padding:2px 4px;
 }
 
 /* Color the background of every other table row */
-tr:nth-child(odd){
- background-color:#cef;
+article tr:nth-child(odd){
+  background-color: #d0ae8e; 
 }
 
-td:nth-child(2){
+
+article td:nth-child(2){
  text-align:center;
 }
 
-th:nth-child(3),td:nth-child(3){
+article th:nth-child(3),td:nth-child(3){
  text-align:right;
 }
 
 /* Highlight table row on hover */
-tr:hover{
+article tr:hover{
  background-color:yellow;
  cursor:default;
 }
 
 /* Give table header cells a gray background */
-th {
-  background-color: #ddd;
+article th {
+   background-color: #b89371; 
 }
 
+ /* Styling for footer */
+ footer {
+  height:35px;
+  padding:5px;
+  background-color: #d0ae8e; 
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+ }
 
+ /* Styling for table in footer */
+footer table {
+  width: 98%;
+  margin: 5px auto;
+  color:#4c2e16; 
+ }
