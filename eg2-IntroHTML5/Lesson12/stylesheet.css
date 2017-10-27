@@ -1,10 +1,10 @@
 /* stylesheet.css */
 /* Sections */
-/* 1) General Style Rules */
+/* 1) General Style Rules (broad) */
 /* 2) Layout Rules -  order as they appear */
-/* 3) General Style Classes */
+/* 3) General Style Classes (narrow) */
 
- /*================================== General Style Rules */
+ /*================================== General Style Rules (broad) */
 /* Style rule for the body element */
 body {
   background-color: yellow;
@@ -47,10 +47,34 @@ header {
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
  }
- /*======== Styling for the article section */
- article {
-  padding: 10px;
+
+/*======== Styling for the sidebar section (aside) */
+aside{
+  width:130px;
+  padding:10px;
+  float:left;
  }
+
+ /*======== Styling for the sidebar section (aside) */
+aside.right {
+  float:right;
+ }
+
+/*======== Styling for the article section */
+article {
+  padding: 10px;
+  /* set aside a column space for the "aside" */
+  /* Left margin should match neighboring column full width */
+  margin-left:150px;
+  border-left: solid 1px  #d0ae8e;
+    /* Right margin should match neighboring column full width */
+  margin-right:150px;
+  border-right: solid 1px  #d0ae8e;
+
+
+ }
+
+
  /* ==== Styling for tables in the article section */
  /* Styling for the table as a whole */
  article table {
@@ -108,7 +132,6 @@ footer {
 h1 {
   font: italic small-caps bold 24px Arial Black, Gadget, Sans-Serif;
   text-shadow: -2px -2px 2px #a48362;
-  text-align: center;
  }
  /* Style for h2 headings */
  h2 {
