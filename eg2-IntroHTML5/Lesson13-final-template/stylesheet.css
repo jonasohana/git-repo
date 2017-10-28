@@ -1,4 +1,10 @@
 /* stylesheet.css */
+/* sections */
+/* 1) broad style rules / html default  */
+/* 2) Layout section rule */
+/* 3) narrow style rules */
+
+
 /* Style rule for the body element */
 body {
   background-color: yellow;
@@ -50,6 +56,7 @@ body {
  }
  /*======== Styling for links in the nav section */
  nav a {
+  /* Make inline hyperlink HTML5 layout elements block elements  */
   display: block;
   background-color: #d0ae8e;
   color: #5d3f25;
