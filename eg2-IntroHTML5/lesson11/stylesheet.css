@@ -1,147 +1,183 @@
 /* stylesheet.css */
 /* Style rule for the body element */
-body {
-  background-color: yellow;
-  background-image: url(pix/bkgleather2.jpg); /* Default font styling */
+body{
+  background-color:yellow;
+  background-image:url(pix/bkgwood.jpg);
+/* Default font styling */
   font: 10pt Arial, Helvetica, Sans-Serif;
-  color: #5d3f25;
-}
+  color:#5d3f25;
+  margin: 10px;
+  padding: 5px;
 
+
+}
 /* Style rule for the wrapper div */
-#wrapper {
-  width: 90%;
-  min-width:600px;
-  max-width:1200px;
-  margin: 1em auto;
-  background-color: white;
-  border: solid 2px #4c2e16;
-  border-radius: 20px;
-  box-shadow: 8px 8px 8px black;
+
+
+  /* Style rule for the wrapper div */  
+#wrapper {  
+    /* Wrapper is 90% of the browser width...*/  
+    width: 90%;  
+   /* But don't go below 600px or above 1200px */  
+    min-width: 600px;  
+    max-width: 1200px;  
+    margin: 0 auto;  
+    background-color: white;  
+    border: solid 2px #4c2e16;  
+    border-radius: 20px;  
+    box-shadow: 8px 8px 8px black;  
+ 
+}
+/* styling ofor all headers */
+h1 h2 h3 h4 h5 h6 {
+  margin: 0px;
 }
 
-/* Eliminate default margins for all heading types */
-h1, h2, h3, h4, h5, h6{
-  margin:0;
-}
+/* Styling for page header */
+header{ 
+  /* assumes 60x60 logo - space 10px above and 10 below */
+  height: 80px;
+  /* Font size/line-height and family */
+  font: 40px/80px Impact, Gadget, Fantasy;
+  text-align: center;
+  /* Background color, image, position */
+  background-color: #d0ae8e; 
+  background-image:url(pix/headerlogo.png);
+  background-repeat: no-repeat;
+  /* indent horizontal(x) 10px and center verticall(y) */
+  background-position: 10px center; 
+  /* Round the top corners */
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+ }
+
+ article {
+   padding: 10px;
+ }
+
+
 
 /* Style for h1 headings */
-h1 {
-  font: italic small-caps bold 24px Arial Black, Gadget, Sans-Serif;
-  text-shadow: -2px -2px 2px #a48362;
-  text-align: center;
+h1{
+  font:italic small-caps bold 24px Arial Black, Gadget, Sans-Serif;
+  text-shadow:-2px -2px 2px #a48362;
+  text-align:center;
 }
 /* Style for h2 headings */
-h2 {
-  font: italic small-caps bold 18px Arial Black, Gadget, Sans-Serif;
-  text-shadow: -1px -1px 1px #a48362;
+h2{
+  font:italic small-caps bold 18px Arial Black, Gadget, Sans-Serif;
+  text-shadow:-1px -1px 1px #a48362;
 }
-
 /* Style for paragraphs */
-p {
-line-height:1.5;
-margin-top:0;
+p{
+  line-height:1.5;
 }
 
-/* === Style classes === */
-/* Highlight any span of text */
+/* Style Classes */
 .hilite {
-  background-color: yellow;
+  background-color: pink;
 }
-
-/* Create raised appearance with border, rounded corners, and shadow */
-/* Works with images, tables, and block elements (div, p, and headings) */
+/* raised apperance */
+/* works for images, tables, and block elements */
 .raised {
-  border: solid 1px gray;
+  border:solid 3px grey;
   border-radius: 5px;
-  box-shadow: 5px 5px 5px gray;
+  box-shadow: 10px 10px 10px grey;
 }
 
-/* Image floating to the left of neighboring text */
 img.left {
   float: left;
-  width: 30%;
-  margin-right: 10px;
-}
+  width:30%; /* from left magin - 30% of the way inside */
+  margin-right: 10px /* right side margin 10px */
 
-/* Image floating to the left of neighboring text */
+
+}
 img.right {
   float: right;
-  width: 30%;
-  margin-left: 10px;
+  width:30%; /* from left magin - 30% of the way inside */
+  margin-right: 10px /* right side margin 10px */
 }
 
-/* Use class="centerall" in p or div to center
-   all text and images inside the element */
 .centerall {
-  text-align: center; /* Clear any floating elements */
-  clear: both;
-}
-
-/* ==== Styles for links and link states. === */
-/* Unvisited links */
-a:link {
-  color: #0c391c;
-}
-
-/* Visited links */
-a:visited {
-  color: #af4600;
-}
-
-/* Mouse pointer on link */
-a:hover {
-  background-color: #bc9f81;
-  color: #1e2953;
-}
-
-/* Mouse pointer on link and left button down */
-a:active {
-  background-color: #1e2953;
-  color: #bc9f81;
-}
-
-/* ==== Styling for tables ==== */
-
-/* Styling for the table as a whole */
-table {
-  /* Remove gaps between table cells */
-  border-collapse: collapse; 
-  /* Font size, family, and color */
-  font: 12pt Times, "Times New Roman" , Serif;
-  color: #4c2e16; 
-  /* top/bottom and side margins (auto for centering) */
-  margin: 1em auto;
-}
-
-/* Table header cells */
-th {
-  background-color: #4c2e16;
-  color: white;
-}
-
-/* Header and data cells */
-th, td {
-  border: solid 1px #5d3f25;
-  padding: 2px 8px;
-}
-
-/* Give even-numbered rows tan background color */
-tr:nth-child(even) {
-  background-color: #c6a586;
-}
-
-/* Right align content in column 2 data cells */
-td:nth-child(2) {
-  text-align: right;
-}
-
-/* Center content in column 3 data cells */
-td:nth-child(3) {
   text-align: center;
+  /* clear floating */
+  clear:both;
+}
+
+a:link{
+  color:darkblue;
+}
+
+a:visited{
+  color: red;
+}
+a:hover{
+  background-color:#d354b7;
+  color:#c5cf2e;
+}
+
+a:active{
+  background-color:#294ccc;
+  color:#c0ad9a;
+}
+
+p {
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 13px;
+}
+
+article table{
+/* Center the table, and put one blank line above and below */
+margin:1em auto;
+/* Remove spacing between cells */
+ border-collapse: collapse;
+}
+
+article th, 
+article td{
+/* Borders around all cells. */
+ border:solid 1px gray;
+  /* Add 2px top and bottom padding, 4px side padding in each cell */
+padding:2px 4px;
+}
+
+/* Color the background of every other table row */
+article tr:nth-child(odd){
+  background-color: #d0ae8e; 
+}
+
+
+article td:nth-child(2){
+ text-align:center;
+}
+
+article th:nth-child(3),td:nth-child(3){
+ text-align:right;
 }
 
 /* Highlight table row on hover */
-tr:hover{
-  background-color:#ff6;
-  cursor:default;
+article tr:hover{
+ background-color:yellow;
+ cursor:default;
 }
+
+/* Give table header cells a gray background */
+article th {
+   background-color: #b89371; 
+}
+
+ /* Styling for footer */
+ footer {
+  height:35px;
+  padding:5px;
+  background-color: #d0ae8e; 
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+ }
+
+ /* Styling for table in footer */
+footer table {
+  width: 98%;
+  margin: 5px auto;
+  color:#4c2e16; 
+ }
