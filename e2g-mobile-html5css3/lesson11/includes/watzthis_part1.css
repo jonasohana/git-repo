@@ -13,7 +13,7 @@ ol {
 #middle {
     background:url("bigback.png");
   }
-  #directions, #flashlight, #danceparty {
+#directions, #flashlight, #danceparty {
       margin:4px;
   }
   #container {
