@@ -1,0 +1,9 @@
+@charset "UTF-8";
+.responsive-photo-90 {
+display: block; /* defines as block - it's own line */
+width: 90%; /* set to 90% of containing element */
+margin-right: auto; /* centers image */
+margin-left: auto;
+max-width:800px;  /* set max for element size */ 
+
+}
