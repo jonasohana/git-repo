@@ -4,11 +4,9 @@
 /* Color scheme hexadecimal values:
 HSBC Colors - shades of blue
 144ED8 397BD8 429EDA 4ABBD8 5CF5F0 */
-/*
 x {
     background-color: #144ED8 #397BD8 #429EDA #4ABBD8 #5CF5F0
 }
-*/
 /* The body tag style applies to all elements on the page */
 body {
 background-color: black;
