@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+       
+                // input age
+                <label for="age">Type your age:</label>
+                <input type="text" id="age"> then click
+                <input type="button" value="Go" onclick="alert('Hello ' + document.getElementById('age').value) >
+                <script>
+                //Create a number variable and give it a value.
+                //var age = 65
+                //Use the variable as a test condition.
+                function calcage() {
+                if (age <= 12) {
+                    document.write("Child fare")
+                }
+                else if (age > 12 && age < 60) {
+                    document.write("Adult fare")
+                } else {
+                    document.write("Senior discount")
+                }   
+
+                }
+
+                <button onclick="calcage()">Click me</button>
+            </script>
+</body>
+</html>
