@@ -13,28 +13,12 @@
       if (lookfor.length > 0) {
         //Look at the drop-down value and make search URL accordingly.
         var ddchoice = document.getElementById("dropdown").value;
-        // Determine location (URL) based on ddchoice
-        var query = "";
         //Build URL for the search.
-        switch (ddchoice) {
-            case "1":
-                query = "http://www.bing.com/search?q=" + encodeURIComponent(lookfor) + " site:" + site;;
-                break;
-            case "2":
-                query = "https://search.yahoo.com/search?p=" + encodeURIComponent(lookfor) + " site:" + site;;
-                break;
-            case "3":
-                query = "https://duckduckgo.com/?q=" + encodeURIComponent(lookfor) + " site:" + site;
-                break;
-            case "4":
-                query = "https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=baidu&wd=" + encodeURIComponent(lookfor) + " site:" + site;
-                break;
-            default:
-                // default choice
-                query = "http://www.google.com/search?q=" + encodeURIComponent(lookfor) + " site:" + site;
+        if (ddchoice == 1) {
+          var query = "http://www.bing.com/search?q=" + encodeURIComponent(lookfor) + " site:" + site;
+        } else {
+          var query = "http://www.google.com/search?q=" + encodeURIComponent(lookfor) + " site:" + site;
         }
-
-        //alert (query);
         //Set Address bar equal to query.
         location.href = query;
       } else {
@@ -51,13 +35,9 @@
     &nbsp;Choose engine:
     <select id="dropdown"> 
       <option value="1">Bing</option> 
-      <option value="2">Yahoo</option> 
-      <option value="3">DuckDuckGo</option> 
-      <option value="4">Baidu</option> 
-      <option value="9" selected>Google</option> 
+      <option value="2" selected>Google</option> 
     </select>
     <input type="button" onclick="search()" value="Go">
-    <div class="variables"></div>
   </p>
 </body>
 </html>
