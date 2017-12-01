@@ -32,7 +32,7 @@ max-width:800px;
     
     article{ 
     width:950px;
-    background-color:rgb(255, 212, 187); /* wuz beige - #1AADFF semi-transparent article bkgclr */
+    background-color:rgb(250, 224, 212); /* wuz beige - #1AADFF semi-transparent article bkgclr */
     /* article background - lightest color lightened  - transparent */ 
     min-height:480px;
     padding:5px;
