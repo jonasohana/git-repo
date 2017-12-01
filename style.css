@@ -32,7 +32,8 @@ max-width:800px;
     
     article{ 
     width:950px;
-    background-color:rgba(118, 208, 250, 0.226); /* wuz beige - #1AADFF semi-transparent article bkgclr */
+    background-color:rgb(255, 212, 187); /* wuz beige - #1AADFF semi-transparent article bkgclr */
+    /* article background - lightest color lightened  - transparent */ 
     min-height:480px;
     padding:5px;
     margin-left:auto;
@@ -47,7 +48,8 @@ max-width:800px;
     float:left;
     width:940px;
     padding:5px;
-    background-color:rgba(20, 131, 191, 0.747); /* wuz silver - #1482BF slightly transparent */
+    background-color:rgba(191, 64, 0, 0.781); /* wuz silver - #1482BF slightly transparent */
+    /* navbar - long line - second to darkest color - 70% transparent */
     }
     
     #navbar li{
@@ -56,18 +58,23 @@ max-width:800px;
     margin-right:40px;
     margin-left:40px;
     position:relative;
+
     }
     
     #navbar a{
     display:block;
     padding:5px;
-    color:#1AADFF; /* wuz white - #1AADFF */
-    background:#072B40; /* wuz black - #072B40 */
+    color:#FF5600; /* wuz white - #1AADFF */
+    /* item text color - very light */
+    background:#7F2B00; /* wuz black - #072B40 */
+    /* item color - darkest color */
     text-decoration:none;
+    border-radius: 1px 5px 5px 1px; /* ad smoth corners */
     }
     
     #navbar a:hover{
-    color:#1AADFF; /* wuz yellow - 1AADFF */
+    color:#FF5600; /* wuz yellow - 1AADFF */
+    /* item text hover - lightest color */
     text-decoration:none;
     }
     /*Dropdown styling*/
@@ -94,7 +101,8 @@ max-width:800px;
     
     #navbar li:hover a{ /*The top link display when a user hovers over sub-menu items*/
     text-decoration: none;
-    background-color:#0D567F; /* wuz grey - 0D567F */
+    background-color:#7F2B00;; /* wuz grey - 0D567F */
+    /*  item color - darkest color - same as #navbar a{ */
     }
     
     #navbar li:hover ul a{ /*The hover state defined a global style for links even before they're hovered over. Here we undo these effects.*/
@@ -117,7 +125,7 @@ max-width:800px;
     }
     
     article {
-    background-color:rgba(118, 206, 250, 0.486); /* wuz beige - #1AADFF semi-transparent article bkgclr */    
+    background-color:rgba(238, 160, 71, 0.486); /* wuz beige - #1AADFF semi-transparent article bkgclr */    
     min-height:480px;
     padding:5px; /*I added some padding to our <article> style.*/
     }
@@ -155,15 +163,18 @@ max-width:800px;
     width: 66%;
     padding: 10px;
     margin-bottom: 5px;
-    color:#1AADFF; /* wuz white - #1AADFF */
-    background:#072B40; /* wuz black - #072B40 */
+    color:#FF5600; /* wuz white - #1AADFF */
+    /* item text color - very light */
+    background:#7F2B00; /* wuz black - #072B40 */
+    /* item color - darkest color */
     text-decoration: none;
     border-radius: 1px 5px 5px 1px;
     }
     
     #navbar a:hover{
     /* We are defining hovered links in the navbar, giving their text a color of yellow. */
-    color:#1AADFF; /* wuz yellow - 1AADFF */
+    color:#FF5600; /* wuz yellow - 1AADFF */
+    /* item text hover - lightest color */
     text-decoration:none;
     }
     
@@ -179,7 +190,8 @@ max-width:800px;
     
     #navbar li:hover a{
     text-decoration: none;
-    background-color: #0D567F; /* wuz grey - #0D567F */
+    background-color:#7F2B00;; /* wuz grey - 0D567F */
+    /*  item color - darkest color - same as #navbar a{ */
     border-radius: 5px 25px 25px 5px;
     border-bottom: thin white solid;
     width:75%;
