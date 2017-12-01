@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+
+
 body{
 font-family:Arial,Verdana,sans-serif;
 font-size:1.3rem;
@@ -28,9 +30,9 @@ max-width:800px;
     font-size:2.5rem;
     }
     
-    article{
+    article{ 
     width:950px;
-    background-color:beige;
+    background-color:rgba(118, 206, 250, 0.486); /* wuz beige - #1AADFF semi-transparent article bkgclr */
     min-height:480px;
     padding:5px;
     margin-left:auto;
@@ -45,7 +47,7 @@ max-width:800px;
     float:left;
     width:940px;
     padding:5px;
-    background-color:silver;
+    background-color:rgba(20, 131, 191, 0.747); /* wuz silver - #1482BF slightly transparent */
     }
     
     #navbar li{
@@ -59,13 +61,13 @@ max-width:800px;
     #navbar a{
     display:block;
     padding:5px;
-    color:white;
-    background:black;
+    color:#1AADFF; /* wuz white - #1AADFF */
+    background:#072B40; /* wuz black - #072B40 */
     text-decoration:none;
     }
     
     #navbar a:hover{
-    color:yellow;
+    color:#1AADFF; /* wuz yellow - 1AADFF */
     text-decoration:none;
     }
     /*Dropdown styling*/
@@ -92,7 +94,7 @@ max-width:800px;
     
     #navbar li:hover a{ /*The top link display when a user hovers over sub-menu items*/
     text-decoration: none;
-    background-color: gray;
+    background-color:#0D567F; /* wuz grey - 0D567F */
     }
     
     #navbar li:hover ul a{ /*The hover state defined a global style for links even before they're hovered over. Here we undo these effects.*/
@@ -115,7 +117,7 @@ max-width:800px;
     }
     
     article {
-    background-color:beige;
+    background-color:rgba(118, 206, 250, 0.486); /* wuz beige - #1AADFF semi-transparent article bkgclr */    
     min-height:480px;
     padding:5px; /*I added some padding to our <article> style.*/
     }
@@ -153,15 +155,15 @@ max-width:800px;
     width: 66%;
     padding: 10px;
     margin-bottom: 5px;
-    color: white;
-    background: black;
+    color:#1AADFF; /* wuz white - #1AADFF */
+    background:#072B40; /* wuz black - #072B40 */
     text-decoration: none;
     border-radius: 1px 5px 5px 1px;
     }
     
     #navbar a:hover{
     /* We are defining hovered links in the navbar, giving their text a color of yellow. */
-    color:yellow;
+    color:#1AADFF; /* wuz yellow - 1AADFF */
     text-decoration:none;
     }
     
@@ -177,7 +179,7 @@ max-width:800px;
     
     #navbar li:hover a{
     text-decoration: none;
-    background-color: gray;
+    background-color: #0D567F; /* wuz grey - #0D567F */
     border-radius: 5px 25px 25px 5px;
     border-bottom: thin white solid;
     width:75%;
