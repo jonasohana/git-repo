@@ -32,7 +32,11 @@ max-width:800px;
     
     article{ 
     width:950px;
+<<<<<<< HEAD
+    background-color:rgba(0, 162, 255, 0.507);
+=======
     background-color:rgba(118, 206, 250, 0.486); /* wuz beige - #1AADFF semi-transparent article bkgclr */
+>>>>>>> dada6689737db7638ec9d246fd4a72385753ff8d
     min-height:480px;
     padding:5px;
     margin-left:auto;
@@ -47,7 +51,11 @@ max-width:800px;
     float:left;
     width:940px;
     padding:5px;
+<<<<<<< HEAD
+    background-color:rgba(0, 170, 255, 0.568);
+=======
     background-color:rgba(20, 131, 191, 0.747); /* wuz silver - #1482BF slightly transparent */
+>>>>>>> dada6689737db7638ec9d246fd4a72385753ff8d
     }
     
     #navbar li{
@@ -61,13 +69,22 @@ max-width:800px;
     #navbar a{
     display:block;
     padding:5px;
+<<<<<<< HEAD
+    color:#0DFFD7;
+    background:#0D25FF;
+=======
     color:#1AADFF; /* wuz white - #1AADFF */
     background:#072B40; /* wuz black - #072B40 */
+>>>>>>> dada6689737db7638ec9d246fd4a72385753ff8d
     text-decoration:none;
     }
     
     #navbar a:hover{
+<<<<<<< HEAD
+    color:#0CD0E8;
+=======
     color:#1AADFF; /* wuz yellow - 1AADFF */
+>>>>>>> dada6689737db7638ec9d246fd4a72385753ff8d
     text-decoration:none;
     }
     /*Dropdown styling*/
@@ -94,7 +111,11 @@ max-width:800px;
     
     #navbar li:hover a{ /*The top link display when a user hovers over sub-menu items*/
     text-decoration: none;
+<<<<<<< HEAD
+    background-color: #0D25FF;
+=======
     background-color:#0D567F; /* wuz grey - 0D567F */
+>>>>>>> dada6689737db7638ec9d246fd4a72385753ff8d
     }
     
     #navbar li:hover ul a{ /*The hover state defined a global style for links even before they're hovered over. Here we undo these effects.*/
@@ -102,7 +123,7 @@ max-width:800px;
     }
     
     #navbar li:hover ul li a:hover{ /*Defines the most explicit hover states when a user hovers over an individual link.*/
-    background-color:black;
+    background-color:#0D25FF;
     }
     
     } /*END MEDIA QUERY 1*/
