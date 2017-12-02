@@ -5,24 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Video</title>
-    <link rel="styleshee" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
 
-
+    <script> 
+ 
+            function playPause(videonum)
+            var myVideo=document.getElementById(videonum); 
+            { 
+            if (myVideo.paused) 
+                myVideo.play(); 
+            else 
+                myVideo.pause(); 
+            } 
+        </script>
 </head>
 <body>
     <h1> got some time... watch these</h1>
     <video width="320" height="240" controls poster="video/big_buck_bunny.jpg" id="video1">
     <source src="video/big_buck_bunny.mp4" type="video/mp4"> 
     <source src="video/big_buck_bunny.ogv" type="video/ogg">
+    <a href=http://www.firefox.com>here</a> to download the Firefox browser for your operating system.
     </video>
-    <br> <br>
-    
+ 
+
+    <br>
+    <button onclick="playPause()">Play or pause the video</button> 
+    <script> 
+        var myVideo1=document.getElementById("video1"); 
+        function playPause()
+        { 
+        if (myVideo1.paused) 
+            myVideo1.play(); 
+        else 
+            myVideo1.pause(); 
+        } 
+    </script>
+
+<br> <br>
+
     <video width="320" height="240" controls poster="video/on_record.png" id="video2">
         <source src="video/on_record.mp4" type="video/mp4">
         <source src="video/on_record.ogv" type="video/ogg">
         Your browser doesn't support the video tag. Click 
         <a href=http://www.firefox.com>here</a> to download the Firefox browser for your operating system.
     </video>
+
+    <br>
+    <button onclick="playPause("video2")">Play or pause the video</button> 
 
     
 </body>
