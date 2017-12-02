@@ -7,19 +7,11 @@
     <title>Video</title>
     <link rel="stylesheet" href="style.css" type="text/css">
 
-    <script> 
  
-            function playPause(videonum)
-            var myVideo=document.getElementById(videonum); 
-            { 
-            if (myVideo.paused) 
-                myVideo.play(); 
-            else 
-                myVideo.pause(); 
-            } 
-        </script>
+
 </head>
 <body>
+
     <h1> got some time... watch these</h1>
     <video width="320" height="240" controls poster="video/big_buck_bunny.jpg" id="video1">
     <source src="video/big_buck_bunny.mp4" type="video/mp4"> 
@@ -51,7 +43,18 @@
     </video>
 
     <br>
-    <button onclick="playPause("video2")">Play or pause the video</button> 
+    <button onclick="playPause2()">Play or pause the video</button> 
+    <script> 
+        var myVideo2=document.getElementById("video2"); 
+        function playPause2()
+        { 
+        if (myVideo2.paused) 
+            myVideo2.play(); 
+        else 
+            myVideo2.pause(); 
+        } 
+    </script>
+
 
     
 </body>
