@@ -112,6 +112,7 @@ max-width:800px;
 @media (max-width: 959px) {
     
     h1{
+    font-family: 'Open Sans', Arial, sans-serif; /* google font - Open Sans */
     font-size:1.5rem;
     color:black; /*I added a font color of black to our <h1> style.*/
     }
@@ -123,8 +124,10 @@ max-width:800px;
     /*}*/
     
     article {
-        background-color:tan;
-        color:darkred;
+        /* background-color:white; 
+        color:darkred; */ /* class setting Lesson 4 - RWD */
+        background-color:#1AADFF; /* contrast 5.9 */
+        color:#072B40;
         min-height:480px;
         padding: 5px;
         }
