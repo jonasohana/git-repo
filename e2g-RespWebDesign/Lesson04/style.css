@@ -116,11 +116,19 @@ max-width:800px;
     color:black; /*I added a font color of black to our <h1> style.*/
     }
     
-    article {
+    /*article {
     background-color:rgba(118, 206, 250, 0.486); /* wuz beige - #1AADFF semi-transparent article bkgclr */    
-    min-height:480px;
+    /*min-height:480px;
     padding:5px; /*I added some padding to our <article> style.*/
-    }
+    /*}*/
+    
+    article {
+        background-color:tan;
+        color:darkred;
+        min-height:480px;
+        padding: 5px;
+        }
+
     
     /*The following style rules are new*/
     a{
