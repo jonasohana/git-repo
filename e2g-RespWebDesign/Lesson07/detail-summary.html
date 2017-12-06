@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>show hide</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@media (max-width:480px){
+    summary{
+    font-size:1.25rem;
+    cursor:pointer;
+    background-color:yellow;
+    margin:5px;
+    padding:5px;
+    }
+    article{
+    display:none;  /* hide detail */
+    }
+}
+@media (min-width:481px){
+    summary{
+    display:none;  /* hide summary */
+    }
+    article{
+    float:left;
+    width:30%;
+    margin:1%;
+    padding:1%;
+    background-color:beige;
+    min-height:400px;
+    }
+}
+</style>
+</head>
+<body>
+<h1>Products</h1>
+<details>
+<summary>
+Product A <img src="a.png" height="18px">
+</summary>
+<p>Product A is so great it will have you holding hands!</p>
+<p>
+<img src="a.png" height="120px">
+</p>
+</details>
+<details>
+<summary>
+Product B <img src="b.png" height="18px">
+</summary>
+<p>Product B will get you moving!</p>
+<p>
+<img src="b.png" height="120px">
+</p>
+</details>
+<article>
+    <h1>Product A</h1>
+    <p>Product A is so great it will have you holding hands!</p>
+    <p><img src="a.png" height="120px"></p>
+    </article>
+<article>
+    <h1>Product B</h1>
+    <p>Product B will get you moving!</p>
+    <p><img src="b.png" height="120px"></p>
+    </article>
+</body>
+</html>
