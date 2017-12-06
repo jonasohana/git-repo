@@ -1,0 +1,32 @@
+<!doctype html>
+<html manifest="mycache.appcache">
+<head>
+<meta charset="UTF-8">
+<title>Photos</title>
+<style>
+img{
+width:45%;
+height:auto;
+float:left;
+margin:2%;
+}
+</style>
+</head>
+<body>
+<h1>Nature Photos</h1>
+<img class="lazy img-responsive" data-original=="Carbon-1-min.jpg" alt="1">
+<img class="lazy img-responsive" data-original=="Carbon-15-min.jpg" alt="2">
+<img class="lazy img-responsive" data-original=="Carbon-34-min.jpg" alt="3">
+<img class="lazy img-responsive" data-original=="LagunaBeach-173-min.jpg" alt="4">
+<img class="lazy img-responsive" data-original=="LagunaBeachWilderness-55-min.jpg" alt="5">
+<img class="lazy img-responsive" data-original=="LagunaBeachWilderness-130-min.jpg" alt="6">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.lazyload.js?v=1.9.1"></script>
+<script src="http://www.appelsiini.net/js/all.js"></script>
+<script type="text/javascript" charset="utf-8">
+    $(function() {
+    $("img.lazy").lazyload();
+    });
+    </script>
+</body>
+<html manifest="mycache.appcache">
