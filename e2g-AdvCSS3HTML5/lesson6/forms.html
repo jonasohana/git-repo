@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+<body>
+    <div id="wrapper">
+            <form action="mailto:pauljonas@yahoo.com" method="post" enctype="text/plain" name="form">
+                <p> 
+                    <label for="name">Name</label> 
+                    <input type="text" ID="name" size="32"> 
+                </p>  
+                <p>
+                    <label for="email">Email</label>  
+                    <input ID="email" type="text" size="40"> 
+                </p>
+                <p>
+                    <label for="comments">Comments?</label><br>
+                    <textarea name="comments" cols="60" rows="6"></textarea> 
+                </p>
+                <p> 
+                    <input type="checkbox" name="maillist" checked> 
+                    <label for"maillist">DON'T Put me on your e-list!</label>
+                </p>
+                <p>
+                    <label for "where">How did you find us?</label>
+                    <select name="where">
+                            <option value="Search engine">Search engine</option>
+                            <option value="Word of mouth">Word of mouth</option>
+                            <option value="Craigslist">Craigslist</option>
+                            <option value="Other">Other</option>
+                    </select>
+                </p>
+              <!-- action button -->
+                <p><input type="submit" value="Click here to submit the form"/></p>
+                <p><input type="reset" value="Click here to reset the form"/></p>
+            </form>
+        <h1> Feedback ...  Stay in touch</h1>
+    </div>
+</body>
+</html>
