@@ -1,0 +1,107 @@
+/* stylesheet.css */
+/* Style rule for the body element */
+body{
+    background-color:yellow;
+    /*background-image:url(pix/bkgleather2.jpg);*/
+}
+h1 {
+    font: italic small-caps bold 24pt Arial Black, Gadget, Sans-Serif;
+    color:blue;
+    text-shadow: 2pt 2pt lightgrey; 
+}
+/* Style rule for the wrapper div */
+#wrapper{
+   width:900px;
+   margin:0 auto;
+   background-color:white;  
+
+   border: double 5px silver;
+    /* 2 values = upperleft/lowerright upperright/lowerleft */
+   border-radius: 40px ;
+
+   /* x y blur spread color */
+   box-shadow: 5px 5px #777;
+
+
+
+
+   text-align: left; 
+   text-indent: 48px;
+
+   
+}
+
+
+/* ==== Styles for links and link states. === */
+/* Unvisited links */
+a:link {
+    color: #0c391c;
+  }
+  
+  /* Visited links */
+  a:visited {
+    color: #af4600;
+  }
+  
+  /* Mouse pointer on link */
+  a:hover {
+    background-color: #bc9f81;
+    color: #1e2953;
+  }
+  
+  /* Mouse pointer on link and left button down */
+  a:active {
+    background-color: #1e2953;
+    color: #bc9f81;
+  }
+  
+  
+  
+  /*
+  /* ==== Styling for tables ==== */
+  
+  /* Styling for the table as a whole */
+  table {
+    /* Remove gaps between table cells */
+    border-collapse: collapse; 
+    /* Font size, family, and color */
+    font: 12pt Times, "Times New Roman" , Serif;
+    color: #4c2e16; 
+    /* top/bottom and side margins (auto for centering) */
+    margin: 1em auto;
+  }
+  
+  /* Table header cells */
+  th {
+    background-color: #4c2e16;
+    color: white;
+  }
+  
+  /* Header and data cells */
+  th, td {
+    border: solid 1px #5d3f25;
+    padding: 2px 4px;
+  }
+  
+  /* Give even-numbered rows tan background color */
+  tr:nth-child(even) {
+    background-color: #c6a586;
+  }
+  
+  /* Right align content in column 2 data cells */
+  td:nth-child(2) {
+    text-align: right;
+  }
+  
+  /* Center content in column 3 data cells */
+  td:nth-child(3) {
+    text-align: center;
+  }
+  
+  /* Highlight table row on hover */
+  tr:hover{
+    background-color:#ff6;
+    cursor:default;
+  }
+  
+
