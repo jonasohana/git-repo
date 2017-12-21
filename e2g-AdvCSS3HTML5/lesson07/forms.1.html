@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+<body>
+    <div id="wrapper">
+            <form action="mailto:pauljonas@yahoo.com" method="post" enctype="text/plain" name="form">
+                <p> 
+                    <label for="name">Name</label> 
+                    <input type="text" ID="name" size="70"> 
+                </p>  
+                <p>
+                    <label for="email">Email</label>  
+                    <input ID="email" type="text" size="70"> 
+                </p>
+                <p>
+                        <label for="comments">Comments</label><br>
+                        <textarea name="comments" cols="100" rows="7"></textarea> 
+                </p>
+                <p> 
+                        <input type="checkbox" name="maillist" checked> 
+                        <label for"maillist">DON'T Put me on your e-list!</label>
+                </p>
+              <!-- action button -->
+                <p><input type="submit" value="Submit"/>  <input type="reset" value="Clear form"/></p>
+            </form>
+    </div>
+</body>
+</html>
