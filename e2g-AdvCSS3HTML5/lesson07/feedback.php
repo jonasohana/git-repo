@@ -60,9 +60,9 @@
 
 $mailto = 'pauljonas@yahoo.com' ;
 $subject = "Feedback Form" ;
-$formurl = "http://git-repo/e2g-AdvCSS3HTML5/lesson07/feedback.html" ;
-$thankyouurl = "http://git-repo/e2g-AdvCSS3HTML5/lesson07/thankyou.html" ;
-$errorurl = "http://git-repo/e2g-AdvCSS3HTML5/lesson07/error.html" ;
+$formurl = "/e2g-AdvCSS3HTML5/lesson07/feedback.html" ;
+$thankyouurl = "/e2g-AdvCSS3HTML5/lesson07/thankyou.html" ;
+$errorurl = "/e2g-AdvCSS3HTML5/lesson07/error.html" ;
 $want_tel_field = 1;
 $want_addr_field = 0;
 
