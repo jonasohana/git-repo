@@ -1,0 +1,799 @@
+/*
+tml-1 
+Introduction to CSS3 and HTML5
+GA: CMardian
+*/
+
+
+img {
+	
+	border: 0;
+}
+
+.caption {
+	
+	text-decoration: none;
+}
+
+
+li {
+	margin-bottom: 1.2em;
+}
+.mouseover a {
+text-decoration:none;
+color:#0033CC;
+font-weight:bold;
+}
+
+.mouseover a:visited {
+text-decoration:none;
+color:#0033CC;
+font-weight:bold;
+}
+
+/* The following line controls the hover background color. */
+/* Color can be any color including transparent.  */
+
+.mouseover a:hover { 
+text-decoration:none;
+color:#0066FF;
+}
+
+/* Operationally critical */
+
+.mouseover a span  { 
+display:none
+} 
+
+/* hide the text */
+
+.mouseover a:hover span  { 
+display:inline;
+background:#f8f6f3;
+text-decoration:none;
+color: red;
+font-style:italic;
+font-weight:normal;
+}
+
+/* code css   */
+
+pre
+{
+  width:500px;
+  font-weight: normal;
+  color: black;
+  text-align:left;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+ line-height: 16px; 
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+
+code
+{
+	text-align:left;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 12px;
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+
+.noscroll
+{
+  width:500px;
+  border:1px solid #f2f2f2;
+  background-color:#F3F6F8;
+  padding: 4px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.scroll
+{
+  width:500px;
+  border:1px solid #f2f2f2;
+  background-color:#F3F6F8;
+  padding: 4px;
+  overflow: clip;
+  overflow-x: scroll;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*misc*/
+
+.rotate {
+	background-color: #8c8c8c;
+	zoom: 1;
+	color: white;
+	
+	
+	
+	
+	
+/* Safari */
+-webkit-transform: rotate(-90deg);
+
+/* Firefox */
+-moz-transform: rotate(-90deg);
+
+/* IE */
+-ms-transform: rotate(-90deg);
+
+/* Opera */
+-o-transform: rotate(-90deg);
+
+/*transform: rotate (-90deg);*/
+
+/* Internet Explorer 
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
+
+}
+
+
+.blue_box {
+/*width: 85%;*/
+border-width:thin;
+border-style:solid;
+border-color:#D9E9FD;
+background-color:#EEF5FE;
+}
+
+.blue_box_top {
+background-color:#D9E9FD;
+padding-top:5px;
+padding-bottom:5px;
+padding-right:5px;
+padding-left:5px;
+text-align:left;
+}
+
+
+	
+/* color classes for color-coded obj-C code*/
+	
+.xcodebrown {
+	color: #6f3700;
+	}
+	
+.xcodered {
+	color: #b50000;
+	}
+	
+.xcodepurple {
+	color: #8c00c1;
+	}
+	
+.xcodepink {
+	color: #d70dc8;
+	}
+	
+.xcodeblue {
+	color: #00006a;
+	}
+	
+.xcodegreen {
+	color: #008000;
+	}
+	
+.xcodeteal {
+	color: #408080;
+	}
+		
+
+
+
+/* NEXT STEPS and FINAL STEPS CORRECTED FOR IE SPACING ISSUES */
+
+/*Next Steps*/
+
+.nextstepsrounded {
+    text-align: left;    
+    background-image: url("nextstepsbar.png");
+    background-repeat: repeat-x;
+    width: 85%;
+    padding-bottom: 5px;
+    border: 2px solid #F9F89D;  
+    background-color: #ffffe8;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    margin-left: auto; /*need this for centering divs in Firefox*/
+    margin-right: auto; /*need this for centering divs in Firefox*/
+    clear:both;
+}
+
+.nextstepsrounded p {
+    padding-left: 10px;
+    padding-right: 10px;
+   padding-top: 5px;
+}
+
+.nextstepsroundedtitle {
+	line-height: 1.5em;
+	margin-bottom: 25px;
+	margin-top: 0px;
+}
+
+/*Final Steps*/
+
+.finalstepsrounded {
+    text-align: left;
+    padding-bottom: 5px;
+    background-image: url("nextstepsbar.png");
+    background-repeat: repeat-x;
+    width: 85%;
+    border: 2px solid #F9F89D;  
+    background-color: #ffffe8;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    margin-left: auto; /*need this for centering divs in Firefox*/
+    margin-right: auto; /*need this for centering divs in Firefox*/
+}
+
+/*This goes with the Final Steps - it styles any paragraph tags inside of the Final Steps*/
+
+.finalstepsrounded p {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.finalstepsroundedtitle {
+	line-height: 1.5em;
+	margin-bottom: 25px;
+	margin-top: 10px;
+}
+
+/*This goes with the Final Steps - it styles the yellow bar that says "Other Courses" */
+
+.yellowbarbackground {
+    background-color: #fdfdbd;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+
+/* END NEXT STEPS and FINAL STEPS CORRECTED FOR IE SPACING ISSUES */
+
+
+/* note, break, tip, etc. boxes */
+
+.tmlnotebox {
+	text-align: left;
+	width: 85%;
+	border: 2px solid #f8e752;
+	background-color: #fcfdce;
+	background-image: url(note_texture.png);
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	margin-left: auto; /*need this for centering divs in Firefox*/
+	margin-right: auto; /*need this for centering divs in Firefox*/
+	margin-top: 25px;
+	margin-bottom: 25px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	clear:both;
+	min-height: 112px; /*this is the height of the icon "standard_tip.gif" */
+	-moz-box-shadow: 3px 3px 10px #333;
+	-webkit-box-shadow: 3px 3px 10px #333;
+	box-shadow: 3px 3px 10px #333;
+	}
+	
+.tmlexamplebox {
+	text-align: left;
+	width: 85%;
+	border: 2px solid #11a6ee;
+	background-color: #b0e9fb;
+	background-image: url(example_texture.png);
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	margin-left: auto; /*need this for centering divs in Firefox*/
+	margin-right: auto; /*need this for centering divs in Firefox*/
+margin-top: 25px;
+	margin-bottom: 25px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	clear:both;
+	min-height: 112px; /*this is the height of the icon "standard_tip.gif" */
+	-moz-box-shadow: 3px 3px 10px #333;
+	-webkit-box-shadow: 3px 3px 10px #333;
+	box-shadow: 3px 3px 10px #333;
+	}
+	
+.tmlwarningbox {
+	text-align: left;
+	width: 85%;
+	border: 2px solid #ff8040;
+	background-color: #ffc2a6;
+	background-image: url(warning_texture.png);
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	margin-left: auto; /*need this for centering divs in Firefox*/
+	margin-right: auto; /*need this for centering divs in Firefox*/
+	margin-top: 25px;
+	margin-bottom: 25px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	clear:both;
+	min-height: 112px; /*this is the height of the icon "standard_tip.gif" */
+	-moz-box-shadow: 3px 3px 10px #333;
+	-webkit-box-shadow: 3px 3px 10px #333;
+	box-shadow: 3px 3px 10px #333;
+	}
+	
+.tmlorangebox {
+	text-align: left;
+	width: 85%;
+	border: 2px solid #ff8040;
+	background-color: #ffc2a6;
+	background-image: url(warning_texture.png);
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	margin-left: auto; /*need this for centering divs in Firefox*/
+	margin-right: auto; /*need this for centering divs in Firefox*/
+	margin-top: 25px;
+	margin-bottom: 25px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	clear:both;
+	min-height: 112px; /*this is the height of the icon "standard_tip.gif" */
+	-moz-box-shadow: 3px 3px 10px #333;
+	-webkit-box-shadow: 3px 3px 10px #333;
+	box-shadow: 3px 3px 10px #333;
+	}
+	
+.tmlexamplepagetipbox {
+	text-align: left;
+	width: 50%;
+	border: 2px solid #2cbaa5;
+	background-color: #acffff;
+	background-image: url(tip_texture.png);
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	margin-left: auto; /*need this for centering divs in Firefox*/
+	margin-right: auto; /*need this for centering divs in Firefox*/
+	margin-top: 25px;
+	margin-bottom: 25px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	clear:both;
+	min-height: 112px; /*this is the height of the icon "standard_tip.gif" */
+	-moz-box-shadow: 3px 3px 10px #333;
+	-webkit-box-shadow: 3px 3px 10px #333;
+	box-shadow: 3px 3px 10px #333;
+	}
+	
+.tmltipbox {
+	text-align: left;
+	width: 85%;
+	border: 2px solid #2cbaa5;
+	background-color: #acffff;
+	background-image: url(tip_texture.png);
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	margin-left: auto; /*need this for centering divs in Firefox*/
+	margin-right: auto; /*need this for centering divs in Firefox*/
+	margin-top: 25px;
+	margin-bottom: 25px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	clear:both;
+	min-height: 112px; /*this is the height of the icon "standard_tip.gif" */
+	-moz-box-shadow: 3px 3px 10px #333;
+	-webkit-box-shadow: 3px 3px 10px #333;
+	box-shadow: 3px 3px 10px #333;
+	}
+	
+.tmlbluebox {
+	text-align: left;
+	width: 85%;
+	border: 2px solid #2cbaa5;
+	background-color: #acffff;
+	background-image: url(tip_texture.png);
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	margin-left: auto; /*need this for centering divs in Firefox*/
+	margin-right: auto; /*need this for centering divs in Firefox*/
+margin-top: 25px;
+	margin-bottom: 25px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	clear:both;
+	-moz-box-shadow: 3px 3px 10px #333;
+	-webkit-box-shadow: 3px 3px 10px #333;
+	box-shadow: 3px 3px 10px #333;
+	}
+	
+	
+	
+
+.takeabreak {
+	text-align: left;
+	width: 85%;
+	border: 2px solid #bbced2;
+	background-color: #e2eaec;
+	padding: 10px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 3px 3px 10px #333;
+	-webkit-box-shadow: 3px 3px 10px #333;
+	box-shadow: 3px 3px 10px #333;
+	}
+
+/*Example links div and styled links*/
+
+.exampleboxnolinkstyle {
+	text-align: left;
+	width: 85%;
+	border: 2px solid #bfccce;
+	background-color: #eef3f4;
+	padding: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.exampleboxnolinkstyle p {
+font-family: "Times New Roman", Georgia, serif;
+margin-top: 0;
+margin-bottom: 0;
+font-size: 14px;
+}
+
+.examplelinksbox {
+	text-align: left;
+	width: 85%;
+	border: 2px solid #bfccce;
+	background-color: #eef3f4;
+	padding: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.examplelinksbox p {
+font-family: "Times New Roman", Georgia, serif;
+font-size: 20px;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+
+/*Unvisited links*/
+.examplelinksbox a:link{
+   color:green;
+   text-decoration: none;
+}
+
+/*Visited links*/
+.examplelinksbox a:visited{
+   color:red;
+   text-decoration:none;
+}
+
+/*Mouse pointer hovering over link*/
+.examplelinksbox a:hover{
+   color:black;
+   background-color:yellow;
+   text-decoration: underline;
+}
+
+/*Mouse pointer on link and mouse button down*/
+.examplelinksbox a:active{
+   background-color:silver;
+   text-decoration: none;
+}
+
+
+	
+/*  tml table style (shades of blue) */
+
+.tmltable {
+border: solid 2px #444d4f;
+border-spacing: 0;
+/*border-collapse: collapse;*/
+background-color: #bbe2f2;
+font-size: 12px;
+margin-left: auto; 
+margin-right: auto;
+}
+
+.tmltable td {
+border: solid 1px #525d60;
+padding: 5px;
+font-size: 12px;
+}
+
+.tmltable th {
+border: solid 1px #525d60;
+background-color: #46bdb7;
+padding: 5px;
+text-align: left;
+font-size: 12px;
+}
+
+/* COMMENTING OUT CSS3 SELECTORS
+
+.tmltable tr:nth-child(even) {
+	background: #E6EFF7;
+	}
+
+
+.tmltable tr:nth-child(odd) {
+	background: #d1e1ef;
+	}
+	
+*/
+
+.tmltable p {
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+.tmltablealternatecolor {
+border: solid 1px #525d60;
+background-color: #d6edf8;   
+}
+
+/*end tml table style*/
+
+
+/*  tml b&w table style */
+
+.bwtable {
+border: solid 2px #666;
+border-spacing: 0;
+/*border-collapse: collapse;*/
+background-color: #fff;
+font-size: 12px;
+margin-left: auto; 
+margin-right: auto;
+
+}
+
+.bwtable td {
+border: solid 1px #666;
+padding: 5px;
+font-size: 12px;
+}
+
+.bwtable th {
+border: solid 1px #666;
+background-color: #8c8c8c;
+padding: 5px;
+text-align: left;
+font-size: 12px;
+}
+
+/* COMMENTING OUT CSS3 SELECTORS
+
+.tmltable tr:nth-child(even) {
+	background: #E6EFF7;
+	}
+
+
+.tmltable tr:nth-child(odd) {
+	background: #d1e1ef;
+	}
+	
+*/
+
+.bwtable p {
+margin-top: 0px;
+margin-bottom: 0px;
+font-family: "Times New Roman", serif;
+font-size: 14px;
+line-height: 18px;
+}
+
+.bwtablealternatecolor {
+border: solid 1px #666;
+background-color: #eaeaea;   
+}
+
+/*end tml table style*/
+
+.bluecloud {
+	width: 599px;
+	height: 270px;
+	background-image: url(bluecloud.png);
+	background-repeat: no-repeat;
+	/*margin-left: auto;
+	margin-right: auto;*/
+}
+
+.browserdisplaybox {
+	border: dotted #c8c8c8 2px;
+	font-family: "Times New Roman", serif;
+	padding: 10px;
+}
+
+.lightyellowhighlight {
+	background-color: #ffff80;
+}
+
+/* pop-up hidden steps div for Lesson 7*/
+
+.more {
+	display: none;
+	/*border-top: 1px solid #666;
+	border-bottom: 1px solid #666;*/
+        }
+	
+a.showLink {
+	text-decoration: none;
+	color: #666;
+	/*padding-left: 2px;*/
+        font-family:Verdana, Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        /*text-transform: uppercase;
+        font-weight: bold;*/
+	/*background: transparent url('down.gif') no-repeat left;*/
+        }
+	
+a.hideLink {
+	text-decoration: none;
+	color: #666;
+	/*padding-left: 50px;*/
+        margin-bottom: 15px;
+        font-family:Verdana, Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        /*text-transform: uppercase;
+        font-weight: bold;*/
+	/*background: transparent url('down.gif') no-repeat left;*/
+        }
+	
+a.hideLink {
+	/*background: transparent url('up.gif') no-repeat left;*/
+        }
+a.timerLink {
+        text-decoration: none;
+	color: #000;
+	/*padding-left: 50px;*/
+        margin-bottom: 15px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 18px;
+}
+a.showLink:hover, a.hideLink:hover, a.timerLink:hover {
+	border-bottom: 1px dotted #008000;
+        }
+	
+.activityanswerbox {
+text-align: left;
+	width: 85%;
+	border: 2px solid #11a6ee;
+	background-color: #b0e9fb;
+	background-image: url(example_texture.png);
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	margin-left: auto; /*need this for centering divs in Firefox*/
+	margin-right: auto; /*need this for centering divs in Firefox*/
+margin-top: 25px;
+	margin-bottom: 25px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	clear:both;
+	min-height: 112px; /*this is the height of the icon "standard_tip.gif" */
+	-moz-box-shadow: 3px 3px 10px #333;
+	-webkit-box-shadow: 3px 3px 10px #333;
+	box-shadow: 3px 3px 10px #333;
+	}	
+
+
+/*test link colors*/
+
+/*a:link {
+	color: #013fb1;
+}
+	
+a:visited {
+	color: #800080;
+}
+
+#ctl00_cphMain_hlkPretest a:link {
+	color: #013fb1;
+}
+
+#ctl00_cphMain_hlkPretest a:visited {
+	color: #800080;
+}
+
+#ctl00_cphMain_hlkPretest a:hover {
+	color: #000000;
+}
+
+.blacklink a:link {
+	color: #013fb1;
+}
+
+.blacklink a:visited {
+	color: #800080;
+}
+
+.blacklink a:hover {
+	color: #000000;
+}*/
+
+/*font styles*/
+
+.titlestylelarge {
+	font-family: "League_Gothic-webfont", "Times New Roman", serif;
+	color: #cceafd;
+	font-size: 120px;
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+
+.titlestylesmall {
+	font-family: "League_Gothic-webfont", "Times New Roman", serif;
+	color: #8ecec4;
+	font-size: 45px;
+	letter-spacing: .02em;
+	margin-top: -10px;
+}
+
+/*@font-face declaration*/
+
+/*	Copyright (c) 2010, Caroline Hadilaksono & Micah Rich <caroline@hadilaksono, micah@micahrich.com>, with Reserved Font Name: "League Gothic".
+
+	This Font Software is licensed under the SIL Open Font License, Version 1.1.
+	This license is available with a FAQ at:
+	http://scripts.sil.org/OFL
+
+	Version 1.1 - 26 February 2007*/
+
+	
+@font-face {
+	font-family: "League_Gothic-webfont";
+	src: url("fonts/League_Gothic-webfont.eot");  /*IE9 Compat Modes */
+	src: url("fonts/League_Gothic-webfont.eot?#iefix") format('embedded-opentype'), /* IE6-IE8 */ 
+	url("fonts/League_Gothic-webfont.woff") format("woff"), /* Modern Browsers */
+	url("fonts/League_Gothic-webfont.ttf")  format("truetype"),  /*Safari, Android, iOS */
+	url("fonts/League_Gothic-webfont.svg#League_Gothic-webfont") format("svg");  /*Legacy iOS */
+	}
+	
+	
+
+

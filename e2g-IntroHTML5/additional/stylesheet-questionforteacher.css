@@ -1,0 +1,25 @@
+/* Stylesheet.css */
+/* Style rule for the body element */
+
+body{
+   background-color:#001AFF;
+   background-image:url(pix/bkgwood.jpg);
+   
+}
+
+/* Style rule for the wrapper div */
+#wrapper {
+    width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    border:solid 2px #4c2e16;
+    border-radius:20px;
+    box-shadow:8px 8px 8px black;
+        /* TESTING */
+    /*border-top: solid 8px #ebddcb;
+    border-right: solid 6px #d2b48c;
+    border-bottom: solid 8px #b22222;
+    border-left: solid 6px #d2b4bc;
+    border-radius: 30px;
+    box-shadow: 10px 5px 2px grey;*/
+}
