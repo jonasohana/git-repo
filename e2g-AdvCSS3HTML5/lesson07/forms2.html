@@ -16,7 +16,7 @@
 <input type="text" name="name" placeholder="Your name or nickname here" size="48"></p>
 
 <p><label for="countries">Where do you live?</label>
-    <input list="countries">
+    <input list="countries" placeholder="Your country here">
     
     <datalist id="countries">
     <option value="Afghanistan">
@@ -39,6 +39,17 @@
 <p><input type="submit" value="Click here to submit the form"/> 
 <input type="reset" value="Click here to reset the form"/></p>
 </form>
+
+<br> <br>
+
+<p><label for="oninput">How often do you visit this site monthly?</label></p>
+<form oninput="x.value=parseInt(a.value)*parseInt(b.value)">
+<p><input type="number" id="a" placeholder="Visits/day"> *
+<input type="number" id="b" placeholder="Days you visit">=
+<output name="x" for="a b"></output>
+</form>
+</p>
+
 </div>
 </body>
 </html>
