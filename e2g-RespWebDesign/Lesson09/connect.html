@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" type="stylesheet" >  
+<title>Connect!</title>
+<style>
+    @media (max-width:480px) {
+        label{
+        display:none;
+        }
+        background: lightblue;
+        color: darkblue;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    </style>
+</head>
+<html>
+<body>
+<form action="connect.php" method="post">
+<h1>Contact Info...</h1>
+<p><label for="name">Name: </label>
+<input name="name" id="name" placeholder="Enter your name here" >
+<p><label for="email">Email: </label>
+<input type="email" name="email" id="email" placeholder="email" required>
+<p><label for="url">URL: </label>
+<input type="url" name="url" id="url" placeholder="url">
+<p><label for="phone">Phone: </label>
+<input type="tel" name="phone" id="phone" placeholder="Phone">
+<p>
+Best time to call: 
+<input type="time" name="time" id="time">
+<p><input type="submit" value="connect!">
+</form>
+</body>
+</html>
