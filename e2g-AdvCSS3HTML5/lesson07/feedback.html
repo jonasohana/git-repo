@@ -8,6 +8,20 @@
 <body>
     <div id="wrapper">
         <h1>Please share your feedback</h1>
+        <form action="feedback.php" method="post" id="tswfbform" accept-charset="UTF-8">
+                <label for="tswname">Name</label> <input type="text" name="fullname" style="max-width: 100%;" id="tswname" size="39" placeholder="Your Name"/><br />&nbsp;<br />
+                <label for="tswemail">Email*</label> <input type="email" style="max-width: 100%;" id="tswemail" name="email" size="39" placeholder="Your email" required/><br />&nbsp;<br />
+                <label for="tswtel">Telephone</label> <input type="tel" id="tswtel" style="max-width: 100%;" name="tel" size="39" /><br />&nbsp;<br />
+                <label for="tswcomments">Comments</label><br />&nbsp;<br />
+                <textarea rows="15" cols="45" name="comments" style="max-width: 100%;" id="tswcomments" placeholder="something to say?"></textarea>
+                <label for="tswdate">Date Requested</label> <input type="date" style="max-width: 100%;" id="tswdate" name="date" size="39" required/><br />&nbsp;<br />
+                <label for="tswcolor">Favorite Color</label> <input type="color" style="max-width: 100%;" id="tswcolor" name="color" size="39" required/><br />&nbsp;<br />
+
+                * required
+                <br />&nbsp;<br />
+                    <input id="tswsubmit" type="submit" value="Send Feedback" />
+                </form>
+                
     </div>
 </body>
 </html>
