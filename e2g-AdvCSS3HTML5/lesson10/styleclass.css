@@ -1,0 +1,16 @@
+charset "UTF-8";
+/* CSS Document */
+/* The body style defines fonts */
+body {font-family:arial,san-serif; color:brown;}
+/* The article style defines the width of the page, centers it, and defines a background color. Relative positioning enables an absolute positioned footer (below) */
+article {width:960px; height:800px; margin-left:auto; margin-right:auto; background-color:beige; position:relative;}
+/* Section content is indented */
+section {margin-left:20px;}
+/* The aside content is floated right with background color, margin and padding */
+aside {float:right; width:300px;background-color:pink; margin:5px; padding:5px}
+/* headers and footers have the same color scheme */
+header,footer{background-color:gray; color:white;}
+/* The footer is positioned at the bottom of the page */
+footer {position:absolute; bottom:0px; left:0px; width:960px;}
+/* headings, paragraphs, and lists have margins, padding, and line heights defined */
+h1,h2,h3,h4,h5,h6,p,ul,ol {margin:5px; padding:5px; line-height:150%;}
