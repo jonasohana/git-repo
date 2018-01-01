@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+background-color:black;
+color: white;
+font-family: Verdana, Geneva, Arial, sans-serif;
+padding:0px;
+margin:0px;
+}
+
+h1,h2,h3,h4,h5,h6,p,li {
+margin-left:15px;
+margin-top:5px;
+}
+
+#wrapper {
+width: 100%;
+}
+
+#right-column {
+float: none;
+height: 600px;
+}
+
+#left-column {
+	float: none;
+	height: 100px;
+	background-color: darkgray;
+}
+
+#footer {
+padding-top:1%;
+height:80px;
+background-color:darkorange;
+}
+
+#banner{
+height:60px;
+background-color:darkorange;
+}
+
+.box {
+width: 45%;
+min-height:120px;
+float: left;
+background-color:black;
+margin: 15px;
+opacity:1;
+}
+
+.button {
+font-size:large;
+text-decoration:none;
+background-color:pink;
+display:block;
+width:25%;
+float:left;
+padding:2%;
+margin:2%;
+border-radius:15px;
+box-shadow:5px 5px 3px gray;
+}
+
+.button:hover {
+box-shadow:5px 5px 3px black;
+}
+
+.clear{ 
+clear: both; 
+}
