@@ -4,12 +4,19 @@
   <title>Timer</title>
   <script>
     //Set timing interval to global variable name.
-    var clock = setInterval("showtime()", 1000);
+    //var clock = setInterval("showtime()", 100);
+
+     //Set timing interval to global variable name.
+    var clock = setInterval("showtime()", 1);
+    clearInterval(clock);
+
     //Function to display current time on the page.
     function showtime() {
       var now = new Date();
-      var time = now.toLocaleTimeString();
+      // var time = now.toLocaleTimeString();
+      var time = now.getHours()+ ":" + now.getMinutes() + ":" + now.getSeconds() + ":" + now.getMilliseconds();
       document.getElementById("ptime").innerHTML = time;
+
     }    
     //Function to stop the timer
     function stoptimer() {
@@ -18,7 +25,7 @@
     //Function to start the timer
     // reassociating the original 'clock' variable  with an interval timer that calls the showtime() 
     function starttimer() {
-        clock = setInterval("showtime()", 1000);
+        clock = setInterval("showtime()", 100);
     }
   </script>
 </head>
