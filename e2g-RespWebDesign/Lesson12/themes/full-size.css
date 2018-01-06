@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+body{
+    color:brown;
+    background-color:beige;
+    font-family:Skia, serif;
+    width:90%;
+    margin:auto;
+    }
+    
+    li{
+    list-style-type:none;
+    float:left;
+    padding:10px;
+    border:thin gray solid;
+    background-color:tan;
+    border-radius:5px;
+    margin-right:10px;
+    }
+    
+    a{
+    text-decoration:none;
+    }
+    
+    li:hover{
+    background-color:white;
+    }
+    
+    .left{
+    margin-left:-40px;
+    }
