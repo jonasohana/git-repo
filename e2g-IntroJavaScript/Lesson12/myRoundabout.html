@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>jQueryTemplate</title>
+  <title>MyRoundabout</title>
   <!-- Load jQuery 1.9.1 minified from Google CDN -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
-</script>
-
-<script>
-    $(document).ready(function() {
-     // jQuery code to execute after page load
-     $('.slider').carousel({dots: true, infinite: true, speed: 200});
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="roundabout.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // jQuery code to execute after page load
+      $('.slider').carousel({ dots: true, infinite: true, speed: 200 });
     });
-</script>
+  </script>
 </head>
 <body>
     <div class="content">
-        <div class="slider">
-            <ul>
-                <li><img src="img/7.jpg"/></li>
-                <li><img src="img/2.jpg"/></li>
-                <li><img src="img/3.jpg"/></li>
-                <li><img src="img/1.jpg"/></li>
-                <li><img src="img/4.jpg"/></li>
-                <li><img src="img/5.jpg"/></li>
-                <li><img src="img/6.jpg"/></li>
-            </ul>
-        </div>
+    <div class="slider">
+      <ul>
+        <li><img src="img/7.jpg"></li>
+        <li><img src="img/2.jpg"></li>
+        <li><img src="img/3.jpg"></li>
+        <li><img src="img/1.jpg"></li>
+        <li><img src="img/4.jpg"></li>
+        <li><img src="img/5.jpg"></li>
+        <li><img src="img/6.jpg"></li>
+      </ul>
     </div>
+  </div>
 </body>
 </html>
