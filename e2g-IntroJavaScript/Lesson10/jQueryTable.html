@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    p>After making and saving that change, and refreshing the page in the browser, the page still shows three buttons. But clicking Button 1 or Button 3 has no effect, because now the <em>#button2</em> selector in the jQuery code links the code directly to the one and only button that contains <em>id="button2"</em>.</p>
+<p>One of the beauties of jQuery is that you get the best of both worlds with selectors. You can easily write a jQuery function that applies to any one element on the page. Or you can write it to apply to many elements. And the selector syntax that you use to target the function is the same as the selector syntax that you use for targeting CSS style rules. Here's a reference to some of the most commonly used CSS-style selectors with examples.</p>
+<table align="center" border="1" bordercolor="#9fc1dd" cellpadding="3" cellspacing="0">
+<tbody>
+<tr bgcolor="#b5cee8">
+<td colspan="3" nowrap="">
+<p align="center"><strong>Commonly Used CSS-Style Selectors</strong> </p>
+</td>
+</tr>
+<tr bgcolor="#e6eff7">
+<td nowrap=""><strong>Selector</strong></td>
+<td nowrap=""><strong>Example</strong></td>
+<td nowrap=""><strong>What it Targets</strong></td>
+</tr>
+<tr bgcolor="#d1e1ef">
+<td nowrap="">*</td>
+<td nowrap="">$("*")</td>
+<td nowrap="">All elements on the page</td>
+</tr>
+<tr bgcolor="#e6eff7">
+<td nowrap=""><em>element type</em></td>
+<td nowrap="">$("li")</td>
+<td nowrap="">All text in &lt;li&gt; . . . &lt;/li&gt; tags</td>
+</tr>
+<tr bgcolor="#d1e1ef">
+<td nowrap="">#name</td>
+<td nowrap="">$("#OKbutton")</td>
+<td nowrap="">Element that contains <em>id="OKbutton"</em></td>
+</tr>
+<tr bgcolor="#e6eff7">
+<td nowrap="">.<em>classname</em></td>
+<td nowrap="">$(".picture")</td>
+<td nowrap="">All elements that contain <em>class = "picture"</em></td>
+</tr>
+<tr bgcolor="#d1e1ef">
+<td nowrap="">:first</td>
+<td nowrap="">$("h1:first")</td>
+<td nowrap="">Text in first &lt;h1&gt; . . . &lt;/h1&gt; tags</td>
+</tr>
+<tr bgcolor="#e6eff7">
+<td nowrap="">:last</td>
+<td nowrap="">$("div:last")</td>
+<td nowrap="">Text in last &lt;div&gt; . . . &lt;/div&gt; tags</td>
+</tr>
+<tr bgcolor="#d1e1ef">
+<td nowrap="">:even</td>
+<td nowrap="">$("tr:even")</td>
+<td nowrap="">All even-numbered table rows</td>
+</tr>
+<tr bgcolor="#e6eff7">
+<td nowrap="">:odd</td>
+<td nowrap="">$("tr:odd")</td>
+<td nowrap="">All odd-numbered table rows</td>
+</tr>
+<tr bgcolor="#d1e1ef">
+<td nowrap="">:first-child</td>
+<td nowrap="">$("li:first-child"</td>
+<td nowrap="">All list items that are the first child of their parent element </td>
+</tr>
+<tr bgcolor="#e6eff7">
+<td nowrap="">:last-child</td>
+<td nowrap="">$("li:last-child")</td>
+<td nowrap="">All list items that are the last child of their parent element</td>
+</tr>
+<tr bgcolor="#d1e1ef">
+<td nowrap="">:nth-child(<em>x</em>)</td>
+<td nowrap="">$("tr:nth-child(2)")</td>
+<td nowrap="">Second row in all tables</td>
+</tr>
+<tr bgcolor="#e6eff7">
+<td nowrap=""><em>parent</em> <em>descendant</em></td>
+<td nowrap="">$("#test li")</td>
+<td nowrap="">All list items contained in the list identified by <em>id="test"</em></td>
+</tr>
+<tr bgcolor="#d1e1ef">
+<td nowrap="">[<em>attribute</em>]</td>
+<td nowrap="">$("[href]")</td>
+<td nowrap="">All tags that contain an href= attribute</td>
+</tr>
+<tr bgcolor="#e6eff7">
+<td nowrap="">[<em>attribute</em> = <em>value</em>]</td>
+<td nowrap="">$("[type=button]")</td>
+<td nowrap="">All tags that contain type="button"</td>
+</tr>
+</tbody>
+</table>
+
+<p>The <em>"button"</em> is the selector and applies to all buttons on the page. The <em>click</em> is the event that must happen on a button in order for the code to execute. Just like regular JavaScript, jQuery offers handlers for many different kinds of events. Below are some other commonly used jQuery events with examples.</p>
+<table align="center" border="1" bordercolor="#9fc1dd" cellpadding="3" cellspacing="0">
+<tbody>
+<tr bgcolor="#b5cee8">
+<td colspan="3" nowrap="">
+<p align="center"><strong>Commonly Used JQuery Events</strong></p>
+</td>
+</tr>
+<tr bgcolor="#e6eff7">
+<td nowrap=""><strong>Event</strong></td>
+<td nowrap=""><strong>Example</strong></td>
+<td nowrap=""><strong>What it Fires</strong></td>
+</tr>
+<tr bgcolor="#d1e1ef">
+<td nowrap="">click</td>
+<td nowrap="">$("img").click</td>
+<td nowrap="">The user clicks or taps an image on the page.</td>
+</tr>
+<tr bgcolor="#e6eff7">
+<td nowrap="">dblclick</td>
+<td nowrap="">$("img").dblclick</td>
+<td nowrap="">The user double-clicks an image on the page.</td>
+</tr>
+<tr bgcolor="#d1e1ef">
+<td nowrap="">mouseenter</td>
+<td nowrap="">$("img").mouseenter</td>
+<td nowrap="">The mouse pointer hovers over an image.</td>
+</tr>
+<tr bgcolor="#e6eff7">
+<td nowrap="">mouseleave</td>
+<td nowrap="">$("img").mouseleave</td>
+<td nowrap="">The mouse pointer moves away from hovering over an image.</td>
+</tr>
+<tr bgcolor="#d1e1ef">
+<td nowrap="">mousedown</td>
+<td nowrap="">$("img").mousedown</td>
+<td nowrap="">The user puts the pointer on the image and presses any <br/>
+            mouse button.</td>
+</tr>
+<tr bgcolor="#e6eff7">
+<td nowrap="">mouseup</td>
+<td nowrap="">$("img").mouseup</td>
+<td nowrap="">The mouse pointer is on an image, and the user has pressed <br/>
+            and released a mouse button.</td>
+</tr>
+<tr bgcolor="#d1e1ef">
+<td nowrap="">focus</td>
+<td nowrap="">$("input").focus</td>
+<td nowrap="">The cursor or keyboard focus is on an input element.</td>
+</tr>
+<tr bgcolor="#e6eff7">
+<td nowrap="">blur</td>
+<td nowrap="">$("input").blur</td>
+<td nowrap="">The cursor or keyboard focus has left an input element.</td>
+</tr>
+<tr bgcolor="#d1e1ef">
+<td nowrap="">keydown</td>
+<td nowrap="">$("input").keydown</td>
+<td nowrap="">The cursor is in an input element, and the user has pressed a key.</td>
+</tr>
+<tr bgcolor="#e6eff7">
+<td nowrap="">keyup</td>
+<td nowrap="">$("input").keyup</td>
+<td nowrap="">The cursor is in an input element, and the user has pressed <br/>
+            and released a key.</td>
+</tr>
+</tbody>
+</table>
+<div class="lesson-chapter"><div class="main-paragraph-text e2g-wrapper"><p><strong>Fun With jQuery Special Effects</strong></p>
+    <p>The ability to apply JavaScript in much the same way you can apply CSS is one of jQuery's best features and part of the reason for its widespread success. But that's not the whole story. As you'll learn in this chapter, in addition to being able to execute any JavaScript you want within jQuery, you can also use some of its built-in <em>effects</em>. Some are similar to CSS3 transition effects. But they have one advantage over CSS3 transitions. Unlike CSS3 transitions, jQuery effects are written to work even with older Web browsers, not just the very newest browsers that have CSS3 support. Here is a quick overview of some of the most popular effects.</p>
+    
+<table align="center" border="1" bordercolor="#9fc1dd" cellpadding="3" cellspacing="0">
+    <tbody>
+    <tr bgcolor="#b5cee8">
+    <td colspan="2" nowrap="">
+    <p align="center"><strong>Popular JQuery Special Effects</strong></p>
+    </td>
+    </tr>
+    <tr bgcolor="#e6eff7">
+    <td nowrap=""><strong>Effect</strong></td>
+    <td nowrap=""><strong>Description</strong></td>
+    </tr>
+    <tr bgcolor="#d1e1ef">
+    <td nowrap="">.fadeIn</td>
+    <td nowrap="">Fades from hidden to opaque</td>
+    </tr>
+    <tr bgcolor="#e6eff7">
+    <td nowrap="">.fadeOut</td>
+    <td nowrap="">Fades from opaque to invisible</td>
+    </tr>
+    <tr bgcolor="#d1e1ef">
+    <td nowrap="">.fadeTo</td>
+    <td nowrap="">Fades to a specified opacity</td>
+    </tr>
+    <tr bgcolor="#e6eff7">
+    <td nowrap="">.fadeToggle</td>
+    <td nowrap="">Switches between opaque and invisible by fading</td>
+    </tr>
+    <tr bgcolor="#d1e1ef">
+    <td nowrap="">.hide()</td>
+    <td nowrap="">Hides the selected elements</td>
+    </tr>
+    <tr bgcolor="#e6eff7">
+    <td nowrap="">.show()</td>
+    <td nowrap="">Shows the selected elements</td>
+    </tr>
+    <tr bgcolor="#d1e1ef">
+    <td nowrap="">.slideDown()</td>
+    <td nowrap="">Reveals selected element by sliding down</td>
+    </tr>
+    <tr bgcolor="#e6eff7">
+    <td nowrap="">.slideToggle()</td>
+    <td nowrap="">Shows or hides the selected element by sliding up or down</td>
+    </tr>
+    <tr bgcolor="#d1e1ef">
+    <td nowrap="">.slideUp()</td>
+    <td nowrap="">Hides the selected element by sliding up</td>
+    </tr>
+    <tr bgcolor="#e6eff7">
+    <td nowrap="">.toggle()</td>
+    <td nowrap="">Shows the element if hidden, hides it if visible</td>
+    </tr>
+    </tbody>
+    </table>
+    <p>The syntax for implementing an effect is similar to the syntax for everything else in jQuery. Here is the basic syntax:</p>
+</body>
+</html>
