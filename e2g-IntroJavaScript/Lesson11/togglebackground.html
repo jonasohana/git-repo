@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>L11 Assignment</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+                //jQuery event handler for clicking any term div. 
+            $("button").click(function () {
+                    //If the item the user just clicked is hidden...
+                //Switch between the two classes .
+                $("p").toggleClass('reverse');
+
+            });
+        });
+    </script>
+
+
+
+    <style>
+
+        .reverse {
+            background: black;
+            color: White;
+        }
+    </style>
+</head>
+<body>
+    <button>Reverse It</button>
+    <p style="font-size: 300%">This is just some sample text.</p>
+</body>
+</html>
