@@ -8,17 +8,33 @@
  <script>
   $(document).ready(function () {
    $("button").click(function () {
-    alert("Hello world");
+    //alert("Hello world");
+    document.getElementById("writetext1").innerHTML = "Hello world";
    });
    $("#button2").click(function () {
-    alert("Hello button 2");
+    //alert("Hello button 2");
+    document.getElementById("writetext1").innerHTML = "Hello world 2";
    });
   }); 
  </script>
+  <!-- Load jQuery 1.9.1 minified from Google CDN -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+  </script>
+  <script>
+   $(document).ready(function () {
+    // jQuery code to execute on any button click
+    $("#button1").click(function () {
+     $("#button3").fadeToggle();
+    });
+   });
+  </script>
 </head>
 <body>
- <button id="button1">Button 1</button><br />
- <button id="button2">Button 2 # Special</button><br />
+        
+  <p id=writetext1></p>  
+    
+ <button id="button1">Button 1 - toggle #button3</button><br />
+ <button id="button2">Button 2 # write 2</button><br />
  <button id="button3">Button 3</button>
 </body>
 </html>
