@@ -1,0 +1,21 @@
+/* add your CSS here */
+	.animal-card {
+        width:340px;
+        border: .5px solid #ccc;
+        box-shadow: 5px 5px #e5e5e5;
+        padding: 10px;
+    }
+    .animal-card-name {
+
+    }
+    .animal-card-information {
+        width: 280px;
+        border: .5px solid #ccc;
+        padding: 10px;
+    }
+    .animal-card img {
+        width:"300px"
+        /* width: 100%; */
+    }
+
+
