@@ -1,0 +1,27 @@
+You've learned a lot about web development so far. I want you to take a moment to write down your thoughts about web development here. Answer the following questions:
+  * What new skills have you learned?
+  * What has been easy?
+  * What has been difficult?
+  * How have you used the problem solving strategies from the first project to overcome challenges so far?
+
+---
+
+Your response goes here!
+1) What new skills have you learned?
+- MDN was new to me - very helpful resource
+- Slack - first time used - I believe this will be a useful resource
+I will need to sharpen my skills on this one.
+
+2) What has been easy?
+- Understanding the basic structure of HTML - the tree analogy helped me understand how HTML is structured
+
+3) What has been difficult?
+- when the words "exactly" are used, I may have worked a little more then expected to exactly match the mockup.
+I ended up spending a good amount of time trying to match the mockups to my Windows Chrome Browser. I was starting "play" with font-size and image width, a topic we have not covered.
+In trying to match the fire emoji displayed in the mockup, I ended up learning that Apple Safari and MS Windows Chrome do not display the same Unicode the same way. (https://emojipedia.org/fire/)
+Actually… I found differences between different platforms and Apps.
+I learned about emojis (https://emojipedia.org/), different Unicode versions and emoji versions.
+
+4) How have you used the problem solving strategies from the first project to overcome challenges so far?
+I immediately used the validator (https://validator.w3.org/)
+This was a helpful resource in finding syntax errors in my html code.
