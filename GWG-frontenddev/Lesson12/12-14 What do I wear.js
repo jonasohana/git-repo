@@ -8,12 +8,12 @@ var shirtWidth = 17.99; // ob //
 var shirtLength = 28;
 var shirtSleeve = 8.13;
 
-// lower bounds - test 1 - N/A
+// lower bounds - test 2 - N/A
 var shirtWidth = 18;
 var shirtLength = 26; // ob //
 var shirtSleeve = 8.13;
 
-// lower bounds - test 1 - N/A
+// lower bounds - test 3 - N/A
 var shirtWidth = 18;
 var shirtLength = 28;
 var shirtSleeve = 8.12; // ob //

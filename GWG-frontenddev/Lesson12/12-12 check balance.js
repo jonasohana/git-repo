@@ -42,9 +42,9 @@ if (checkBalance) { // checkBalance is true //
         } else if (!isActive) { // !isActive AND !balance > 0  //
             console.log("Your account is no longer active." );  
         } else if (balance === 0 ) { // isActive AND balance = 0  //
-            console.log("Your account is empty");  
+            console.log("Your account is empty.");  
             } else {  // isActive AND balance < 0  //
-                console.log("Your balance is negative. Please contact bank. ");  
+                console.log("Your balance is negative. Please contact bank.");  
             }
 } else { // checkBalance is false //
     console.log("Thank you. Have a nice day!");  
