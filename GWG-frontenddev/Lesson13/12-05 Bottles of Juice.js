@@ -10,7 +10,8 @@
  *   - Do not use ellipes 
  * "2 bottles of juice on the wall! 2 bottles of juice! Take one down, pass it around... 1 bottle of juice on the wall!"
  * "1 bottle of juice on the wall! 1 bottle of juice! Take one down, pass it around... 0 bottles of juice on the wall!"
- */
+ * Note: where number displays "1"  (num=1 or num-1=1) use singular "bottle"
+ * */
 
 var num = 99;
 
