@@ -31,3 +31,11 @@ while (x <= 20) {
     // x = ++x;
     x = x + 1;
 }
+
+/* when using Google console - after the program completes - there will be an output
+>James
+<21 
+after the last line ">James" 
+this looks like the program ended with "21" 
+this output in note part of your output - it is a step from the console itself
+*/  
