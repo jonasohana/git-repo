@@ -10,6 +10,7 @@ function (max) {
     for (i=0;i<max;i++) {
         sound += "ha"
     }
+    sound += "!"
     return sound; 
 }
-console.log(laugh(10));
+console.log(laugh(3));

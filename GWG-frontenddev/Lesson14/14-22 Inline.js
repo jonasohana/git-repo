@@ -20,5 +20,5 @@ emotions("happy", function laugh(num)  {
     }    
     msg+="!";
     return msg; 
-    }); // literally the whol thing is a function 
+    }); // literally the whole thing is a function 
 
