@@ -10,3 +10,6 @@ for (var row = 0; row < donutBox.length; row++) {
       console.log(donutBox[row][column],row,column);
     }
   }
+
+
+}
