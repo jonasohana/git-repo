@@ -21,7 +21,7 @@ const bills = [50.23, 19.12, 34.01,
 
 // 19.12 * 1.15 = 21.988 rounded equals 22.00
 
-var totals = bills.map(function(amt) {
+const totals = bills.map(function(amt) {
   return Number(Number.parseFloat(amt*1.15).toFixed(2) );
 });
 console.log(totals);
