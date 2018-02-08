@@ -13,7 +13,7 @@
  */
 
 // your code goes here
-var countdown = 60;
+const countdown = 60;
 
 
 while (countdown >= 0 ) {

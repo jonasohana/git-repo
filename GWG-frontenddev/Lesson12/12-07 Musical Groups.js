@@ -3,7 +3,7 @@
  */
 
 // change the value of `musicians` to test your conditional statements
-var musicians = 1;
+const musicians = 1;
 
 if (musicians <= 0) {
     console.log("not a group"); /*if musicians is less than or equal to 0*/

@@ -5,33 +5,33 @@
 // change the values of `balance`, `checkBalance`, and `isActive` to test your code
 // follow decision tree from left to right - top to bottom 
 // check balance - false //
-var balance = 325.00;
-var checkBalance = false;
-var isActive = false;
+const balance = 325.00;
+const checkBalance = false;
+const isActive = false;
 
 
 // check balance - true AND account active AND balance > 0  //
-var balance = 325.00;
-var checkBalance = true;
-var isActive = true;
+const balance = 325.00;
+const checkBalance = true;
+const isActive = true;
 
 
 // check balance - true AND account NOT active AND balance > 0  //
-var balance = 325.00;
-var checkBalance = true;
-var isActive = false;
+const balance = 325.00;
+const checkBalance = true;
+const isActive = false;
 
 
 // check balance - true AND account IS active AND balance = 0  //
-var balance = 0;
-var checkBalance = true;
-var isActive = true;
+const balance = 0;
+const checkBalance = true;
+const isActive = true;
 
 
 // check balance - true AND account IS active AND balance = -1  //
-var balance = -1;
-var checkBalance = true;
-var isActive = true;
+const balance = -1;
+const checkBalance = true;
+const isActive = true;
 
 
 // your code goes here

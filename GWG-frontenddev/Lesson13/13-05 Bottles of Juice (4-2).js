@@ -13,7 +13,7 @@
  * Note: where number displays "1"  (num=1 or num-1=1) use singular "bottle"
  * */
 
-var num = 99;
+const num = 99;
 
 while (num > 0) {
     // check value of num

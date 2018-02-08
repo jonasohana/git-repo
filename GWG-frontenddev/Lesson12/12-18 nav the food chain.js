@@ -15,22 +15,22 @@
 // change the values of `eatsPlants` and `eatsAnimals` to test your code
 
 // "herbivore" if an animal eats plants
-var eatsPlants = true;
-var eatsAnimals = false;
+const eatsPlants = true;
+const eatsAnimals = false;
 
 // "carnivore" if an animal eats animals
-var eatsPlants = false;
-var eatsAnimals = true;
+const eatsPlants = false;
+const eatsAnimals = true;
 
 // "omnivore" if an animal eats plants and animals
-var eatsPlants = true;
-var eatsAnimals = true;
+const eatsPlants = true;
+const eatsAnimals = true;
 
 // undefined if an animal doesn't eat plants or animals
-var eatsPlants = false;
-var eatsAnimals = false;
+const eatsPlants = false;
+const eatsAnimals = false;
 /**/
 
-var category = (eatsPlants && eatsAnimals ? "omnivore" : (eatsPlants ? "herbivore" : (eatsAnimals ? "carnivore" : undefined)));
+const category = (eatsPlants && eatsAnimals ? "omnivore" : (eatsPlants ? "herbivore" : (eatsAnimals ? "carnivore" : undefined)));
 
 console.log(category);

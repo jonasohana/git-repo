@@ -12,9 +12,9 @@
  */
 
  // palying with the function
- var cry = /* <- call the function using the variable name : cry  */
+ const cry = /* <- call the function using the variable name : cry  */
  function bo (max) { /* NOT the function */
-     var sound = "";
+     const sound = "";
      for (i=0;i<max;i++) {
          sound += "bo"
      }

@@ -10,8 +10,8 @@
  *  - the highest seat number is 99, not 100
  */
 
-for (var row = 0; row < 26; row++) {
-    for (var seat = 0; seat < 100;seat++) {
+for (const row = 0; row < 26; row++) {
+    for (const seat = 0; seat < 100;seat++) {
       console.log(row + "-" + seat);
     }
   }

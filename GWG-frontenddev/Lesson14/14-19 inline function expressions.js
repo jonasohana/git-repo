@@ -4,7 +4,7 @@
 // named function expression
 // Function expression that assigns the function displayFavorite 
 // to the variable favoriteMovie
-var favoriteMovie = function displayFavorite(movieName) {
+const favoriteMovie = function displayFavorite(movieName) {
     console.log("My favorite movie is " + movieName);
   };
   

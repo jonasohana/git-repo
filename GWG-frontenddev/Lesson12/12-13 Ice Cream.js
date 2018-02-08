@@ -17,29 +17,29 @@
 // change the values of `flavor`, `vessel`, and `toppings` to test your code
 
 // test false topping //
-var flavor = "strawberry";
-var vessel = "cone";
-var toppings = "cookies";
+const flavor = "strawberry";
+const vessel = "cone";
+const toppings = "cookies";
 
 // test false vessel //
-var flavor = "strawberry";
-var vessel = "hat";
-var toppings = "peanuts";
+const flavor = "strawberry";
+const vessel = "hat";
+const toppings = "peanuts";
 
 // test false flavor //
-var flavor = "bacon";
-var vessel = "cone";
-var toppings = "peanuts";
+const flavor = "bacon";
+const vessel = "cone";
+const toppings = "peanuts";
 
 // test true all first instance //
-var flavor =  "vanilla" ;
-var vessel = "cone";
-var toppings =  "sprinkles";
+const flavor =  "vanilla" ;
+const vessel = "cone";
+const toppings =  "sprinkles";
 
 // test true all second instance //
-var flavor = "chocolate";
-var vessel = "bowl";
-var toppings = "peanuts";
+const flavor = "chocolate";
+const vessel = "bowl";
+const toppings = "peanuts";
 /**/
 
 // Add your code here

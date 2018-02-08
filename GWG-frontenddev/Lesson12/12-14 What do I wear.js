@@ -4,89 +4,89 @@
 
 // change the values of `shirtWidth`, `shirtLength`, and `shirtSleeve` to test your code
 // lower bounds - test 1 - N/A
-var shirtWidth = 17.99; // ob //
-var shirtLength = 28;
-var shirtSleeve = 8.13;
+const shirtWidth = 17.99; // ob //
+const shirtLength = 28;
+const shirtSleeve = 8.13;
 
 // lower bounds - test 2 - N/A
-var shirtWidth = 18;
-var shirtLength = 26; // ob //
-var shirtSleeve = 8.13;
+const shirtWidth = 18;
+const shirtLength = 26; // ob //
+const shirtSleeve = 8.13;
 
 // lower bounds - test 3 - N/A
-var shirtWidth = 18;
-var shirtLength = 28;
-var shirtSleeve = 8.12; // ob //
+const shirtWidth = 18;
+const shirtLength = 28;
+const shirtSleeve = 8.12; // ob //
 
 
 // test small 
-var shirtWidth = 18;
-var shirtLength = 28;
-var shirtSleeve = 8.13;
+const shirtWidth = 18;
+const shirtLength = 28;
+const shirtSleeve = 8.13;
 
-var shirtWidth = 19.99;
-var shirtLength = 28.99;
-var shirtSleeve = 8.37;
+const shirtWidth = 19.99;
+const shirtLength = 28.99;
+const shirtSleeve = 8.37;
 
 // test medium 
-var shirtWidth = 20;
-var shirtLength = 29;
-var shirtSleeve = 8.38;
+const shirtWidth = 20;
+const shirtLength = 29;
+const shirtSleeve = 8.38;
 
-var shirtWidth = 20.99;
-var shirtLength = 29.99;
-var shirtSleeve = 8.62;
+const shirtWidth = 20.99;
+const shirtLength = 29.99;
+const shirtSleeve = 8.62;
 
 // test large 
-var shirtWidth = 22;
-var shirtLength = 30;
-var shirtSleeve = 8.63;
+const shirtWidth = 22;
+const shirtLength = 30;
+const shirtSleeve = 8.63;
 
-var shirtWidth = 22.99;
-var shirtLength = 30.99;
-var shirtSleeve = 8.87;
+const shirtWidth = 22.99;
+const shirtLength = 30.99;
+const shirtSleeve = 8.87;
 
 // test xl 
-var shirtWidth = 24;
-var shirtLength = 31;
-var shirtSleeve = 8.88;
+const shirtWidth = 24;
+const shirtLength = 31;
+const shirtSleeve = 8.88;
 
-var shirtWidth = 25.99;
-var shirtLength = 32.99;
-var shirtSleeve = 9.62;
+const shirtWidth = 25.99;
+const shirtLength = 32.99;
+const shirtSleeve = 9.62;
 
 // test 2xl 
-var shirtWidth = 26;
-var shirtLength = 33;
-var shirtSleeve = 9.63;
+const shirtWidth = 26;
+const shirtLength = 33;
+const shirtSleeve = 9.63;
 
-var shirtWidth = 27.99;
-var shirtLength = 33.99;
-var shirtSleeve = 10.12;
+const shirtWidth = 27.99;
+const shirtLength = 33.99;
+const shirtSleeve = 10.12;
 
 // test 3xl 
-var shirtWidth = 28;
-var shirtLength = 34;
-var shirtSleeve = 10.13;
+const shirtWidth = 28;
+const shirtLength = 34;
+const shirtSleeve = 10.13;
 
-var shirtWidth = 30.99;
-var shirtLength = 35.99;
-var shirtSleeve = 12.12;
+const shirtWidth = 30.99;
+const shirtLength = 35.99;
+const shirtSleeve = 12.12;
 
 
 // test N/A each 
-var shirtWidth = 18; // size S (small)
-var shirtLength = 28.5; // size S (small)
-var shirtSleeve = 8.47; // size M (medium)
+const shirtWidth = 18; // size S (small)
+const shirtLength = 28.5; // size S (small)
+const shirtSleeve = 8.47; // size M (medium)
 
-var shirtWidth = 20; // size M (medium)
-var shirtLength = 30; // size L (large)
-var shirtSleeve = 8.62; // size M (medium)
+const shirtWidth = 20; // size M (medium)
+const shirtLength = 30; // size L (large)
+const shirtSleeve = 8.62; // size M (medium)
 
 
-var shirtWidth = 24; // size XL (Xlarge)
-var shirtLength = 31; // size XL (Xlarge)
-var shirtSleeve = 10.13; // size 2XL (2Xlarge)
+const shirtWidth = 24; // size XL (Xlarge)
+const shirtLength = 31; // size XL (Xlarge)
+const shirtSleeve = 10.13; // size 2XL (2Xlarge)
 /* */
 
 // your code goes here

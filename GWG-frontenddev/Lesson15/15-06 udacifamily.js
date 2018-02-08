@@ -6,5 +6,5 @@
  */
 
 // your code goes here
-var udaciFamily = ["Julia", "James","Pablo"];
+const udaciFamily = ["Julia", "James","Pablo"];
 console.log(udaciFamily);

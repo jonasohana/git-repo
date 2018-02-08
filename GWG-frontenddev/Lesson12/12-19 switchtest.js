@@ -1,4 +1,4 @@
-var option = 3;
+const option = 3;
 
 switch (option) {
   case 1:

@@ -1,4 +1,4 @@
-var sister = {
+const sister = {
     name: "Sarah", // attribute(s)
     'age': 23, // attribute(s)
     parents: [ "alice", "andy" ], // attribute(s)

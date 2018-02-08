@@ -4,15 +4,15 @@
 
 // for ()
 // for loops - control over looping, specific elements
-var donuts = ["jelly donut", "chocolate donut", "glazed donut"];
+const donuts = ["jelly donut", "chocolate donut", "glazed donut"];
 
 // the variable `i` is used to step through each element in the array
-for (var i = 0; i < donuts.length; i++) {
+for (const i = 0; i < donuts.length; i++) {
     donuts[i] += " hole";
     donuts[i] = donuts[i].toUpperCase();
 }
 
-var donuts = ["jelly donut", "chocolate donut", "glazed donut"];
+const donuts = ["jelly donut", "chocolate donut", "glazed donut"];
 
 // forEach - array.forEach
 // .forEach
@@ -51,9 +51,9 @@ function logArrayElements(element, index, array) {
 // only pass one argument - used as the element
 // returns new array - improvedDonuts
 
-var donuts = ["jelly donut", "chocolate donut", "glazed donut"];
+const donuts = ["jelly donut", "chocolate donut", "glazed donut"];
 
-var improvedDonuts = donuts.map(function(donut) {
+const improvedDonuts = donuts.map(function(donut) {
   donut += " hole";
   donut = donut.toUpperCase();
   return donut;
@@ -62,8 +62,8 @@ var improvedDonuts = donuts.map(function(donut) {
 // review both 
 
 // map: change value using function
-var numbers = [1, 4, 9, 16];
-var doubles = numbers.map(function(num) {
+const numbers = [1, 4, 9, 16];
+const doubles = numbers.map(function(num) {
   return num * 2;
 });
 console.log(numbers);
@@ -71,12 +71,11 @@ console.log(numbers);
 // doubles is now [2, 8, 18]
 // numbers is still [1, 4, 9]
 
+// inline map 
 // map: change value using argument
-var array1 = [1, 4, 9, 16];
-
+const array1 = [1, 4, 9, 16];
 // pass a function to map
 const map1 = array1.map(x => x * 2);
-
 console.log(map1);
 // expected output: Array [2, 8, 18, 32]
 

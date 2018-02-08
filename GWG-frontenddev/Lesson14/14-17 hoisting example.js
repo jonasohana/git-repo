@@ -2,9 +2,9 @@
 function cat() {
     //console.log(meow(2)); // function expression is not hoisted
     console.log( purr() ); // function declaration is hoisted
-    var meow = function (max) {
-        var catMessage = "";
-        for (var i=0;i<max;i++){
+    const meow = function (max) {
+        const catMessage = "";
+        for (const i=0;i<max;i++){
             catMessage +="meow";
         }
         return catMessage;
@@ -25,9 +25,9 @@ cat();
 function caterr() {
     //console.log(meow(2)); // function expression is not hoisted
     console.log( meowerr(2) ); // function declaration is hoisted
-    var meowerr = function (max) {
-        var catMessage = "";
-        for (var i=0;i<max;i++){
+    const meowerr = function (max) {
+        const catMessage = "";
+        for (const i=0;i<max;i++){
             catMessage +="meow";
         }
         return catMessage;

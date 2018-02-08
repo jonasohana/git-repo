@@ -2,7 +2,7 @@
  * Programming Quiz: Semicolons! (2-8)
  */
 
-var thingOne = "red";
-var thingTwo = "blue";
+const thingOne = "red";
+const thingTwo = "blue";
 
 console.log (thingOne + " " + thingTwo);

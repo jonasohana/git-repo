@@ -1,8 +1,8 @@
 // function expression catSays
-var catSays = function(max) {
+const catSays = function(max) {
     console.log("inside catSays");
-    var catMessage = "";
-    for (var i = 0; i < max; i++) {
+    const catMessage = "";
+    for (const i = 0; i < max; i++) {
       catMessage += "meow ";
     }
     return catMessage;

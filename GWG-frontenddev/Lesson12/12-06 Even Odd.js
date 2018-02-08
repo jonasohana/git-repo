@@ -8,7 +8,7 @@
  */
 
 // change the value of `number` to test your if...else statement
-var number = 2;
+const number = 2;
 
 if ((number % 2) === 0 ){
     console.log("even");

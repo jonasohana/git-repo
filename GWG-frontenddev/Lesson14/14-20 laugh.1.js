@@ -5,9 +5,9 @@
  */
 
  // palying with the function
-var laugh = /* finish the function expression */
+const laugh = /* finish the function expression */
 function (max) {
-    var sound = "";
+    const sound = "";
     for (i=0;i<max;i++) {
         sound += "ha"
     }

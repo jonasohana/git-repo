@@ -12,7 +12,7 @@
  */
 
  // palying with the function
- var cry = /* finish the function expression */
+ const cry = /* finish the function expression */
  function dispalyCry (max) {
      return "boohoo!"; 
  }

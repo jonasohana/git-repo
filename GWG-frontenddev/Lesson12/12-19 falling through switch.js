@@ -1,5 +1,5 @@
-var tier = "nsfw deck";
-var output = "You’ll receive "
+const tier = "nsfw deck";
+const output = "You’ll receive "
 
 switch (tier) {
   case "deck of legends":

@@ -5,14 +5,14 @@
  * Then, print the crew array to the console.
  */
 
-var captain = "Mal";
-var second = "Zoe";
-var pilot = "Wash";
-var companion = "Inara";
-var mercenary = "Jayne";
-var mechanic = "Kaylee";
+const captain = "Mal";
+const second = "Zoe";
+const pilot = "Wash";
+const companion = "Inara";
+const mercenary = "Jayne";
+const mechanic = "Kaylee";
 
 // your code goes here
-var crew = [captain,second,pilot,companion,mercenary,mechanic];
+const crew = [captain,second,pilot,companion,mercenary,mechanic];
 console.log(crew);
 

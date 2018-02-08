@@ -19,17 +19,17 @@
  */
 
  /* baseline */
-var firstName = "Julia";
-var interest = "cats";
-var hobby = "play video games";
-var awesomeMessage = "Hi, my name is "+ firstName + ". I love "+ interest + ". In my spare time, I like to "+ hobby + ".";
+const firstName = "Julia";
+const interest = "cats";
+const hobby = "play video games";
+const awesomeMessage = "Hi, my name is "+ firstName + ". I love "+ interest + ". In my spare time, I like to "+ hobby + ".";
 
 console.log(awesomeMessage);
 
 // submitted 
- var firstName = "Pablo";
- var interest = "my dog, Einstein";
- var hobby = "walk my dog";
- var awesomeMessage = "Hi, my name is "+ firstName + ". I love "+ interest + ". In my spare time, I like to "+ hobby + ".";
+ const firstName = "Pablo";
+ const interest = "my dog, Einstein";
+ const hobby = "walk my dog";
+ const awesomeMessage = "Hi, my name is "+ firstName + ". I love "+ interest + ". In my spare time, I like to "+ hobby + ".";
  
  console.log(awesomeMessage);

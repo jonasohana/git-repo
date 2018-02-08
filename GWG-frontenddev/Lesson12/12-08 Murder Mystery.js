@@ -17,39 +17,39 @@ Mr. Kalehoff was located in the ballroom.
 
 // test value - true 
 /*
-var room = "ballroom";
-var suspect = "Mr. Kalehoff";
+const room = "ballroom";
+const suspect = "Mr. Kalehoff";
 
-var room = "gallery";
-var suspect = "Ms. Van Cleve";
+const room = "gallery";
+const suspect = "Ms. Van Cleve";
 
-var room = "billiards room";
-var suspect = "Mrs. Sparr";
+const room = "billiards room";
+const suspect = "Mrs. Sparr";
 
-var room = "dining room";
-var suspect = "Mr. Parkes";
+const room = "dining room";
+const suspect = "Mr. Parkes";
 */
 
 // test value - false 
 /*
-var room = "gallery";
-var suspect = "Mr. Kalehoff";
+const room = "gallery";
+const suspect = "Mr. Kalehoff";
 
-var room = "dining room";
-var suspect = "Ms. Van Cleve";
+const room = "dining room";
+const suspect = "Ms. Van Cleve";
 
-var room = "gallery";
-var suspect = "Mrs. Sparr";
+const room = "gallery";
+const suspect = "Mrs. Sparr";
 
-var room = "gallery";
-var suspect = "Mr. Parkes";
+const room = "gallery";
+const suspect = "Mr. Parkes";
 */
 
-var room = "dining room";
-var suspect = "Mr. Parkes";
+const room = "dining room";
+const suspect = "Mr. Parkes";
 
-var weapon = "";
-var solved = false;
+const weapon = "";
+const solved = false;
 
 /*
 the poison belongs to the ballroom,

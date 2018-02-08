@@ -6,7 +6,7 @@
  */
 
 // your code goes here
-var breakfast = {
+const breakfast = {
     name: "The Lumberjack",
     Price: "9.95",
     contents:  ["eggs", "sausage", "toast", "hashbrowns", "pancakes"]

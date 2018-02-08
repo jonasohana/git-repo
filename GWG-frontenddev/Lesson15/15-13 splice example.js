@@ -1,4 +1,4 @@
-var donuts = ["glazed", "chocolate frosted", "Boston creme", "glazed cruller"];
+const donuts = ["glazed", "chocolate frosted", "Boston creme", "glazed cruller"];
 
 donuts.splice(1, 2, "chocolate cruller", "creme de leche"); 
 // from index 1 - removes "chocolate frosted" and  "Boston creme" 
@@ -7,7 +7,7 @@ donuts.splice(1, 2, "chocolate cruller", "creme de leche");
 //and
 
 // removing and adding an element - think replacement
-var months = ['Jan', 'March', 'April', 'June'];
+const months = ['Jan', 'March', 'April', 'June'];
 months.splice(1, 0, 'Feb');
 // inserts at 1st index position
 console.log(months);
@@ -20,15 +20,15 @@ console.log(months);
 
 // remove - counting form the back 
 // use -number given end is -1
-var myFish = ['angel', 'clown', 'mandarin', 'sturgeon','humuhumu'];
-var removed = myFish.splice(-3, 1);
+const myFish = ['angel', 'clown', 'mandarin', 'sturgeon','humuhumu'];
+const removed = myFish.splice(-3, 1);
 
 // myFish is ["angel", "clown", "sturgeon", "humuhumu"] 
 // removed is ["mandarin"] - 3 steps from the back
 
 // remove no elements and insert 1 element
-var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
-var removed = myFish.splice(2, 0, 'drum');
+const myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
+const removed = myFish.splice(2, 0, 'drum');
 
 // myFish is ["angel", "clown", "drum", "mandarin", "sturgeon"] 
 // removed is [], no elements removed

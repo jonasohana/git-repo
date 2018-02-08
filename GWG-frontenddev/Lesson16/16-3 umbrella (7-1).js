@@ -2,7 +2,7 @@
  * Programming Quiz: Umbrella (7-1)
  */
 
-var umbrella = {
+const umbrella = {
     color: "pink",
     isOpen: true,
     open: function() {

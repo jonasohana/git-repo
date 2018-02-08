@@ -9,9 +9,9 @@ If the number is divisible by 3 and 5, print "JuliaJames"
 If the number is not divisible by 3 or 5, print the number
 */
 
-var t0 = performance.now();
+const t0 = performance.now();
 
-var x = 1;
+const x = 1;
 
 
 while (x <= 20) {
@@ -43,5 +43,5 @@ this looks like the program ended with "21"
 this output in note part of your output - it is a step from the console itself
 */  
 
-var t1 = performance.now();
+const t1 = performance.now();
 console.log("Call to doSomething took " + (t1 - t0) + " milliseconds.");

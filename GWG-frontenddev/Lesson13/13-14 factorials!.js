@@ -3,7 +3,7 @@
  * print out the factorial of the number 12:
  * 479001600
  */
-var solution = 1;
+const solution = 1;
 
  for (x=12;x>0;--x) {
      //solution = solution * x;

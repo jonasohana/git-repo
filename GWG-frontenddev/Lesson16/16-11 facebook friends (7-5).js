@@ -14,15 +14,15 @@ removeFriend() - decreases the friend count by 1
  */
 
 // your code goes here
-var facebookProfile = {
+const facebookProfile = {
     name: "Pablo",
     friends: 4,
     messages: ["hey - how is GDW","how do you solve 99.7","PM me"],
     postMessage: function post(message) {
-        var postedMessages = facebookProfile.messages.push(message); 
+        const postedMessages = facebookProfile.messages.push(message); 
     },
     deleteMessage: function remove(index) {
-        var deletedMessages = facebookProfile.messages.splice(index,1);
+        const deletedMessages = facebookProfile.messages.splice(index,1);
     },
     addFriend: function() {
         facebookProfile.friends++;
