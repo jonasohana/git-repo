@@ -4,7 +4,7 @@ function cat() {
     console.log( purr() ); // function declaration is hoisted
     const meow = function (max) {
         const catMessage = "";
-        for (const i=0;i<max;i++){
+        for (var i=0;i<max;i++){
             catMessage +="meow";
         }
         return catMessage;
@@ -27,7 +27,7 @@ function caterr() {
     console.log( meowerr(2) ); // function declaration is hoisted
     const meowerr = function (max) {
         const catMessage = "";
-        for (const i=0;i<max;i++){
+        for (var i=0;i<max;i++){
             catMessage +="meow";
         }
         return catMessage;

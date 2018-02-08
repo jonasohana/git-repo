@@ -4,7 +4,7 @@ function emotions(myString, myFunc) {
 
 emotions("happy", function laugh(num){
     const ha = "";
-    for(const x = 1; x <= num; x++){
+    for(var x = 1; x <= num; x++){
         ha += "ha";
     }
     return ha + "!";

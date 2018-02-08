@@ -1,6 +1,6 @@
 const laugh = function displayLaugh(num) {
     const msg = "";
-    for(const i=1;i<=num;i++){
+    for(var i=1;i<=num;i++){
         msg+="ha";
     }    
     msg+="!";

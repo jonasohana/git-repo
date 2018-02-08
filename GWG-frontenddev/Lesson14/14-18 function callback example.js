@@ -2,7 +2,7 @@
 const catSays = function(max) {
     console.log("inside catSays");
     const catMessage = "";
-    for (const i = 0; i < max; i++) {
+    for (var i = 0; i < max; i++) {
       catMessage += "meow ";
     }
     return catMessage;

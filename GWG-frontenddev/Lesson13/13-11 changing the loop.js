@@ -9,6 +9,6 @@ while (x >= 1) {
     x = x - 1;
 }
 */
-for (const x=10;x>=1;x--) {
+for (var x=10;x>=1;x--) {
     console.log(x);
 }
