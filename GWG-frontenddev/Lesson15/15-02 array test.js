@@ -4,4 +4,8 @@ const arraysInArrays = [
     [true, false, true, false]
 ];
 
-for (const i=0;i<=length.arraysInArrays[];i++ );
+for (i=0; i<=arraysInArrays.length; i++ ) {
+    console.log(arraysInArrays[i]);
+}
+
+
