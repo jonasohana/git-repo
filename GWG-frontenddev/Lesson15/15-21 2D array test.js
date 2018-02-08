@@ -4,12 +4,9 @@ const donutBox = [
     ["chocolate cruller", "Boston creme", "creme de leche"]
   ];
 
-for (const row = 0; row < donutBox.length; row++) {
+for (var row = 0; row < donutBox.length; row++) {
     // here, donutBox[row].length refers to the length of the donut array currently being looped over
-    for (const column = 0; column < donutBox[row].length; column++) {
+    for (var column = 0; column < donutBox[row].length; column++) {
       console.log(donutBox[row][column],row,column);
     }
   }
-
-
-}
