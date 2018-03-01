@@ -1,11 +1,8 @@
 /*
-For this quiz, use a jQuery class selector to grab all of the elements of class 'article-item' on the page!
+For this quiz, use a jQuery class selector to grab all the element with id 'nav' on the page!
 */
 
 // don't change this variable!
-var articleItems;
+var nav;
 
-articleItems = $('.article-item');
-
-// there is 1 article 
-// there are 4 article items
+nav = $('#nav');
