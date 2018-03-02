@@ -10,8 +10,10 @@ var articleList, h1, kids, parents;
 
 articleList = $('.article-list' );
 
-h1 = $('.h1');
+h1 = articleList.siblings('h1');
 
-kids = $('.article-list').children();
+kids = articleList.find('*');
 
-parents = $('.article-list').parents();
+parents = articleList.parents('div');
+
+console.log (h1, kids, parents);
