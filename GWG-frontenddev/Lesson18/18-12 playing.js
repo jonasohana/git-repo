@@ -6,14 +6,12 @@ You must use articleList to navigate to the element(s)!
 */
 
 // Start with these variable!
-var articleList, h1, kids, parents;
+var articleList, navitems, kids, parents;
 
 articleList = $('.article-list' );
 
-h1 = articleList.siblings('h1');
-
-kids = articleList.find('*');
+navitems = articleList.find('nav-item');
 
 parents = articleList.parents('div');
 
-console.log (h1, kids, parents);
+console.log (nav-item,  parents);
