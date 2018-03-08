@@ -71,7 +71,10 @@ This is the HTML document that you'll use jQuery to modify. To take the quiz, cl
     </div>
 
     <script>
-          $( ".featured" ).toggleClass( "highlight" );
-        </script>
+          $( ".featured" ).toggleClass( "highlight" ); 
+          $( ".highlight" ).toggleClass( "toggleThis1" ); // add a new limb
+          $( ".toggleThis1" ).toggleClass( "highlight" ); // off
+          $( ".toggleThis1" ).toggleClass( "highlight" ); // on
+    </script>
 </body>
 </html>
