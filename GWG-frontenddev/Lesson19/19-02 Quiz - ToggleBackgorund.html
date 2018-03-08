@@ -6,7 +6,10 @@ This is the HTML document that you'll use jQuery to modify. To take the quiz, cl
 -->
 <html lang="en">
 <head>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <meta charset="UTF-8">
 </head>
 <body>
@@ -48,7 +51,7 @@ This is the HTML document that you'll use jQuery to modify. To take the quiz, cl
                     </ul>
                     <p>Magnam ex autem doloremque, tempore mollitia atque aut delectus corporis rem similique voluptates omnis reiciendis vitae impedit exercitationem unde quaerat, doloribus voluptatibus molestias et veritatis sed optio repudiandae? Provident, voluptates.</p>
                 </li>
-                <li class="article-item featured highlight">
+                <li class="article-item featured">
                     <header>Article #2</header>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil animi ipsum, incidunt mollitia modi cum, eum ex doloremque rerum quod, maiores quisquam, enim quam unde cumque! Quam, doloremque. Voluptatum, maxime!</p>
                     <p>Numquam et quae, quasi. Reiciendis nemo mollitia eveniet alias, debitis facere atque excepturi et beatae laudantium commodi optio unde amet vitae libero quas cupiditate, nam porro minus. Quisquam, odit non.</p>
@@ -68,9 +71,7 @@ This is the HTML document that you'll use jQuery to modify. To take the quiz, cl
     </div>
 
     <script>
-        $( "p" ).click(function() {
-          $( this ).toggleClass( "highlight" );
-        });
+          $( ".featured" ).toggleClass( "highlight" );
         </script>
 </body>
 </html>
