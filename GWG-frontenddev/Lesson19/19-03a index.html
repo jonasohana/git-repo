@@ -72,6 +72,21 @@ This is the HTML document that you'll use jQuery to modify. To take the quiz, cl
             article2 = $(".featured");
             article2.toggleClass("featured"); // remove class featured
             article3 = article2.next().toggleClass("featured"); // add class featured to next article 
-    </script>
+        </script>
+        
+        <!-- google/udacity answer  -->
+        <script>
+                //  var articles
+                    var article2, article3;
+    
+                // articles = $(".article-list");
+                article2 = $(".featured");
+                article3 = article2.next();
+                article2.toggleClass("featured"); // remove class featured
+                article3.toggleClass("featured"); // add class featured to next article 
+        
+        
+        </script>
+
 </body>
 </html>
