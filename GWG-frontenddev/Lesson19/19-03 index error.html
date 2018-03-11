@@ -65,12 +65,14 @@ This is the HTML document that you'll use jQuery to modify. To take the quiz, cl
             </ul>
         </div>
     </div>
-    <!-- <script>
-    var articles, article2, article3;
+    <script>
+            //  var articles
+             var article2, article3;
 
-        articles = $(".article-list");
-        // article2.toggleClass("featured");
-        // article3 = article2.next( ".selected" ).toggleClass("featured");
-    </script> -->
+            // articles = $(".article-list");
+            article2 = $(".featured");
+            article2.toggleClass("featured"); // remove class featured
+            article3 = article2.next().toggleClass("featured"); // add class featured to next article 
+        </script>
 </body>
 </html>
