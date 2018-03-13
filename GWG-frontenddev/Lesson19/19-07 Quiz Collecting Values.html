@@ -66,13 +66,21 @@ This is the HTML document that you'll use jQuery to modify. To take the quiz, cl
         The starter code below creates an event listener that will run any time the input changes.
         For more on events, check the instructor notes.
         */
-// <!-- 
-// <!-- 
-//         $('#input').on('change', function() {
-//             var val;
-//             val = // Your code goes here!
-//         }); --> -->
 
+         $('#input').on('change', function() {
+             var val;
+             val = $('#input').val(); // read input val 
+             $('.articles').children('h1').text(val); // set val into h1
+        }); 
+
+// answer
+
+        //  $('#input').on('change', function() {
+        //      var val, h1;
+        //      val = $('#input').val(); // read input val 
+        //      h1 = $('.articles').children('h1'); // set val into h1
+        //      h1.text(val);
+        // });  
 
     </script>
 </body>
