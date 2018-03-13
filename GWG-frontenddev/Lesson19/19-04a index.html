@@ -74,13 +74,26 @@ This is the HTML document that you'll use jQuery to modify. To take the quiz, cl
                 // Start with this variable!
                
 
+                // var navList;
+
+                // navList = $(".nav-item");
+                // navList.first().children("*").toggleClass("href");
+                // navList.first().children("*").attr("href","#1");
+
                 var navList;
 
                 navList = $(".nav-item");
-                // navList.first().attr("href","#4");
-                navList.first().attr("href");
-                // $("#w3s").attr("href");
-                // $("#w3s").attr("href", "https://www.w3schools.com/jquery/");
+                navList.first().children("a").toggleClass("href");
+                navList.first().children("a").attr("href","#1");
+
+                // google/udacity answer - did NOT add class href 
+                // var navList, firstItem, link;
+                // navList = $(".nav-item");
+
+                // firstItem = navList.children().first();
+                // link = firstItem.find('a');
+                // link.attr('href','#1');
+
         </script>
 
 </body>
