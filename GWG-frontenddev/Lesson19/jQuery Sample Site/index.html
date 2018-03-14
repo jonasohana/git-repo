@@ -6,9 +6,22 @@ This is the HTML document you'll use jQuery to modify. To take the quiz, click o
 -->
 <html lang="en">
 <head>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="app.js"></script>
     <meta charset="UTF-8">
+    <script>
+        // call function when document.ready
+        // A $( document ).ready() block.
+        $( document ).ready(function() {
+            alert( "document ready!" );
+        });
+        // the following is Shorthand for document.ready
+        $(function() {
+            $('img').attr('src', 'https://picsum.photos/200/300/?random');
+        });
+    
+    </script>
 </head>
 <body>
     <div class="container">
@@ -59,5 +72,6 @@ This is the HTML document you'll use jQuery to modify. To take the quiz, click o
             </ul>
         </div>
     </div>
+
 </body>
 </html>
