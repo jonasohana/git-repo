@@ -71,11 +71,23 @@ This is the HTML document that you'll use jQuery to modify. To take the quiz, cl
         // Your code goes here!
         var newText
         $( "p" ).each(function( index ) {
-            // console.log( index + ": " + $( this ).text().length );
-            // console.log($( this ).text()+ $( this ).text().length );
-            newText = ($( this ).text()+ $( this ).text().length );
-            $( this ).text(newText.val()); // work on this!
+            newText = ($( this ).text()+ $( this ).text().length ); // includes number of chars at end
+            // console.log(newText);
+            // console.log($( this ).val() ); // GET the value
+            console.log($( this ).text(newText) ); // SET the value
+            // $('.articles').children('h1').text(val); 
         });
+
+        // google amswer
+        // function numberAdder () {
+        //     var text , number;
+        //     text = $(this).text();
+        //     number = text.length;
+        //     $(this).text(text + " " + number );
+        // }
+        // $('p').each(numberAdder);
+
+
     </script>
 </body>
 </html>
