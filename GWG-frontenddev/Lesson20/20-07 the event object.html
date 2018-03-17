@@ -8,6 +8,8 @@ This is the HTML document that you'll use jQuery to modify. To take the quiz, cl
 <head>
     <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- <script src="app.js"></script> --> 
+    <!-- above can be added if you which to create a separate app.js file and unique folder -->
     <meta charset="UTF-8">
 </head>
 <body>
@@ -25,6 +27,9 @@ This is the HTML document that you'll use jQuery to modify. To take the quiz, cl
                 </ul>
             </nav>
         </header>
+        <div class="actions">
+            <button id="my-button">Do it!</button>
+        </div>
         <div class="articles">
             <input id="input" value="Cool Articles" type="text">
             <h1>Cool Articles</h1>
@@ -60,50 +65,58 @@ This is the HTML document that you'll use jQuery to modify. To take the quiz, cl
         </div>
     </div>
     <script>
-        /*  
-        The 20-02 video uses 'https://www.udacity.com/courses/all' , which in my case did 
-        function using the code example
-
-        the following example will work using the existing example html, which has been uses in 
-        many unit 19 examples 
-
-        1) run the html in a browser, don't worry about the error
-        2) open the console, COPY and PASTE (copypasta) the following code
-        */
-
-        var inputFields = jQuery ('input'); // $ can replace jQuery
-        var firstInput = inputFields[0];
-        monitorEvents( firstInput);
-        
-        /* stop mintoring - sepcific */
-        unmonitorEvents(firstInput);
-
-        /* monitor all events */
-        monitorEvents($0)
-        /* stop monitoring all events */
-        unmonitorEvents($0)
-
-        /*  
-        immediatly you show see the console fill the display with events
-        example events:
-        pointerover PointerEvent {isTrusted: true, pointerId: 1, width: 1, height: 1, pressure: 0, …}
-        pointerenter PointerEvent {isTrusted: true, pointerId: 1, width: 1, height: 1, pressure: 0, …}
-        mouseover MouseEvent {isTrusted: true, screenX: 39, screenY: 451, clientX: 30, clientY: 192, …}
-        pointermove PointerEvent {isTrusted: true, pointerId: 1, width: 1, height: 1, pressure: 0, …}
-        mousemove MouseEvent {isTrusted: true, screenX: 39, screenY: 451, clientX: 30, clientY: 192, …}
-
-        place the mouse inside and out (leave) the input box
-        mousemove MouseEvent {isTrusted: true, screenX: 144, screenY: 454, clientX: 135, clientY: 195, …}
-        pointerout PointerEvent {isTrusted: true, pointerId: 1, width: 1, height: 1, pressure: 0, …}
-        pointerleave PointerEvent {isTrusted: true, pointerId: 1, width: 1, height: 1, pressure: 0, …}
-
-        typing 'x' key
-        keyup KeyboardEvent {isTrusted: true, key: "x", code: "KeyX", location: 0, ctrlKey: false, …}
+    //     For this quiz, use jQuery to set up an event listener. Your event listener must:
+    //      1. listen to the #my-button element
+    //      2. listen for a `click` event
+    //      3. perform the following actions when the button is clicked:
+    //     a. remove the #my-button element from the DOM
+    //     b. add the `success` class to the body
 
 
-        */
+    // $('#my-button').on("click", function () {
+    //     $(this).remove();
+    //     $('body').toggleClass('.success');
+    // });
+
+
+
+
+    // google answer - not passed 
+    // $('#my-button').on("click", function () {
+    //     $('button').remove();
+    //     $('body').addClass('success');
+    // });
+
+    // another google answer - not passed 
+    // $('#my-button').on("click", function () {
+    //     $(this).remove();
+    //     $('body').addClass('success');
+    // });
+
+    // this passed - note success class is hidden and this work only on quiz
+    // $("#my-button").click(function(){
+    //     $(this).remove();
+    //     $('body').addClass('success');
+    // });
+    var onoff;
+    onoff = true;
+
+    $( "#my-button").on( 'click', function( evt ) {
+        if (onoff) {
+            $( evt.target ).css( 'background', 'red' );
+            console.log( evt );
+            onoff = false;
+        } else {
+            $( evt.target ).css( 'background', 'white' );
+            console.log( evt );
+            onoff = true;
+        }
+
+    });
 
 
     </script>
+
+
 </body>
 </html>

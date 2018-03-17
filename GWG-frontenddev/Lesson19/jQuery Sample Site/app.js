@@ -8,7 +8,11 @@ when the document is ready.
 
 Unfortunately, placepuppy is no longer available. Here's a link to a random
 animal image on lorempixel.com:
-http://lorempixel.com/350/150/animals/
+NOOPE! http://lorempixel.com/350/150/animals/
+
+use 
+https://picsum.photos/200/300/?random
+
 
 Good luck!
 
