@@ -92,9 +92,12 @@
 
 
         $(".panel-button").on('click',function () {
+            var content = "My new Awesome content";
+
             var panelId = $(this).attr('data-panelid');
             // alert(panelId);
-            $("#"+ "panelId").toggle();
+            $("#"+ panelId).toggle(); // really like this - reminds me of 1st year at northrop
+            $('#'+ panelId+ ' .panel-body').html( "My new Awesome content"); 
         });
     });
     
