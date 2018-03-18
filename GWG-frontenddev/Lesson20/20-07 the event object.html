@@ -72,49 +72,58 @@ This is the HTML document that you'll use jQuery to modify. To take the quiz, cl
     //     a. remove the #my-button element from the DOM
     //     b. add the `success` class to the body
 
-
-    // $('#my-button').on("click", function () {
-    //     $(this).remove();
-    //     $('body').toggleClass('.success');
-    // });
-
-
+    $(function(){ // must have a ready document 
+        // $('#my-button').on("click", function () {
+        //     $(this).remove();
+        //     $('body').toggleClass('.success');
+        // });
 
 
-    // google answer - not passed 
-    // $('#my-button').on("click", function () {
-    //     $('button').remove();
-    //     $('body').addClass('success');
-    // });
-
-    // another google answer - not passed 
-    // $('#my-button').on("click", function () {
-    //     $(this).remove();
-    //     $('body').addClass('success');
-    // });
-
-    // this passed - note success class is hidden and this work only on quiz
-    // $("#my-button").click(function(){
-    //     $(this).remove();
-    //     $('body').addClass('success');
-    // });
-    var onoff;
-    onoff = true;
-
-    $( "#my-button").on( 'click', function( evt ) {
-        if (onoff) {
-            $( evt.target ).css( 'background', 'red' );
-            console.log( evt );
-            onoff = false;
-        } else {
-            $( evt.target ).css( 'background', 'white' );
-            console.log( evt );
-            onoff = true;
-        }
-
-    });
 
 
+        // google answer - not passed 
+        // $('#my-button').on("click", function () {
+        //     $('button').remove();
+        //     $('body').addClass('success');
+        // });
+
+        // another google answer - not passed 
+        // $('#my-button').on("click", function () {
+        //     $(this).remove();
+        //     $('body').addClass('success');
+        // });
+
+        // this passed - note success class is hidden and this work only on quiz
+        // $("#my-button").click(function(){
+        //     $(this).remove();
+        //     $('body').addClass('success');
+        // });
+        // var onoff;
+        // onoff = true;
+
+        // $( "#my-button").on( 'click', function( evt ) {
+        //     if (onoff) {
+        //         $( evt.target ).css( 'background', 'red' );
+        //         console.log( evt );
+        //         onoff = false;
+        //     } else {
+        //         $( evt.target ).css( 'background', 'white' );
+        //         console.log( evt );
+        //         onoff = true;
+        //     }
+
+        // });
+
+        // $( 'article' ).on( 'click', function( evt ) {
+        //     $( evt.target ).css( 'background', 'red' );
+        // });
+
+
+        $( 'article' ).on( 'click', function( evt ) {
+            alert( evt.target );
+        });
+
+    }); // document ready
     </script>
 
 
