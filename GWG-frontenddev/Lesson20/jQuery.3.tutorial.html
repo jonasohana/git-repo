@@ -92,12 +92,16 @@
         var content = "My new Awesome content";
 
         $(".panel-button").on('click',function () {
-            var panelId = $(this).attr('data-panelid');
+            var panelId = $(this).attr('data-panelid'); // this refers to above item clicked
             // alert(panelId);
             $("#"+ panelId).toggle(); // really like this - reminds me of 1st year at northrop
             $('#'+ panelId+ ' .panel-body').html( content); 
             // $('#panel2 .panel-body').html( 'My new Awesome content'); 
         });
+
+        // $('btn1').on('click', function () { // old approach before dry 
+        //     $('#panel1').toggle(); // this will not work
+        // });
     });
     
      

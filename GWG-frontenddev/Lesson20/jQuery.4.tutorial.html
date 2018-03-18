@@ -1,9 +1,7 @@
 <!doctype html>
-<!-- http://jsbin.com/pojeni/1/edit?html,output -->
-
 <html>
 <head>
-    <title>jQuery Tutorial</title>
+    <title></title>
 
     <meta charset="utf-8" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -15,94 +13,100 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
+
     <style type="text/css">
-    .jumbotron {
-        text-align: center;
-    }
-    button {
-        width: 100px;
-        height: 40px;
+    .special {
+        color: blue;
     }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="jumbotron">
-            <h1>Let's Have Fun!</h1>
-            <button class="panel-button" data-panelid="panel1">#btn1</button>
-            <button class="panel-button" data-panelid="panel2">#btn2</button>
-            <button class="panel-button" data-panelid="panel3">#btn3</button>
-            <button class="panel-button" data-panelid="panel4">#btn4</button>
-        </div>
+    <ul class="list">
+        <li>one</li>
+        <li class="special">two</li>
+        <li>three</li>
+        <li>
+            <ul class="sublist">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </li>
+    </ul>
 
-        <div class="row">
-            <div class="col-xs-3">
-                <div id="panel1" class="panel panel-primary">
-                    <div class="panel-heading">
-                        #panel1
-                    </div>
-                    <div class="panel-body">
-                        content
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-3">
-                <div id="panel2" class="panel panel-primary">
-                    <div class="panel-heading">
-                        #panel2
-                    </div>
-                    <div class="panel-body">
-                        content
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-3">
-                <div id="panel3" class="panel panel-primary">
-                    <div class="panel-heading">
-                        #panel3
-                    </div>
-                    <div class="panel-body">
-                        content
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-3">
-                <div id="panel4" class="panel panel-primary">
-                    <div class="panel-heading">
-                        #panel4
-                    </div>
-                    <div class="panel-body">
-                        content
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script>
-
-    </script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
     <script>
     $(function(){
+        // $('.list').on('click', function () {
+        //     $(this).find('li').filter(':first').addClass('special');
+        //     $(this).find('li').filter('.special').next().addClass('special');
+        //     $(this).find('li').filter('.special').remove();
 
-        var content = "My new Awesome content";
+        // });
+        // $('.special').on('click', function(){
+        //     alert('special');
+        // });
 
-        $(".panel-button").on('click',function () {
-            var panelId = $(this).attr('data-panelid');
-            // alert(panelId);
-            $("#"+ panelId).toggle(); // really like this - reminds me of 1st year at northrop
-            $('#'+ panelId+ ' .panel-body').html( content); 
-            // $('#panel2 .panel-body').html( 'My new Awesome content'); 
-            // $('#'+ panelId+ ' .panel-body').html(''); 
-        });
+        // $('li').on('click', function(){
+        //     if( $(this).is('.special') ) { // is special
+        //         alert('special');
+        //     }
+        // });
+
+        // // did not use else on purpose
+        // $('li').on('click', function(){
+        //     if( !$(this).is('.special') ) { // not special
+        //         alert('not special'); // not with in two levels will display 2x
+        //         // b/c two listeners are active
+        //     }
+        // });
+        // // one solution is to filter slection to .sublist
+        // $('.sublist li').on('click', function(){
+        //     if( !$(this).is('.special') ) { // not special
+        //         alert('not special'); // not with in two levels will display 2x
+        //         // b/c two listeners are active
+        //     }
+        // });
+        
+
+
+
     });
+    // console entries
+    // traverse the DOM
+    // $('li');
+    // $('li').first();
+    // $('li').last();
+    // $('li').last().hide();
+    // $('li').last().show();
+    // $('li').eq(0); // one  unique displayed elements
+    // $('li').eq(1); // two
+    // $('li').eq(2); // three
+    // $('li').eq(3); // (group)
+    // $('li').eq(4); // 1
+    // $('li').eq(5); // 2
+    // $('li').eq(5); // 3
+    // $('li').eq(4).parent();
+    // $('li').eq(4).parent().parent();
+    // $('li').eq(4).parent().parent().parent();
+    // $('li').eq(4).parent().parent().prev();
+    // $('ul:first').children();
+    // $('li:first').siblings();
+
+
+
+
+
+
+
     
-     
     </script>
+
+
 </body>
 </html>
+
 
