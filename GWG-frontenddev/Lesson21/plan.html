@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Lab: Pixel Art Maker</h1>
+
+    <h2>Choose Grid Size</h2>
+    <form id="sizePicker">
+        Grid Height:
+        <input type="number" id="inputHeight" name="height" min="1" value="1">
+        Grid Width:
+        <input type="number" id="inputWeight" name="width" min="1" value="1">
+        <input type="submit">
+    </form>
+
+    <h2>Pick A Color</h2>
+    <input type="color" id="colorPicker">
+
+    <h2>Design Canvas</h2>
+    <table id="pixelCanvas"></table>
+
+    <script src="designs.js"></script>
+
+    <script>
+
+    $(function(){ // must have a ready document 
+        function makeLine(length) {
+            const line = "";
+            for (var j = 1; j <= length; j++) {
+                line += "* ";
+            }
+            return line + "\n";
+        }
+
+        // your code goes here.  Make sure you call makeLine() in your own code.
+        function buildTriangle(base) {
+            const output =""; 
+            for (var i=1;i<=base;i++) {
+                output += makeLine(i);
+            }
+            return output; 
+
+        }
+
+        // test your code by uncommenting the following line
+        console.log(buildTriangle(10));
+    )};
+
+</script>
+</body>
+</html>
+
