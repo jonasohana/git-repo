@@ -16,10 +16,19 @@ function generate_table() {
           // node the contents of the <td>, and put the <td> at
           // the end of the table row
           var cell = document.createElement("td");
-    //       var cellText = document.createTextNode("cell in row "+i+", column "+j);
+        // var cellText = document.createTextNode("cell in row "+i+", column "+j);
           var cellText = document.createTextNode(i+","+j);
           cell.appendChild(cellText);
           row.appendChild(cell);
+        // PJ 3/18 add id per cell 
+
+        // $( 'tr' ).on( 'click', 'ld',  function() {
+        //     console.log( $(this).cellIndex + cellText );
+
+        // });
+
+        // trList.first().children("a").toggleClass("href");
+        // trList.first().children("a").attr("href","#1");
         }
      
         // add the row to the end of the table body
@@ -32,4 +41,5 @@ function generate_table() {
       body.appendChild(tbl);
       // sets the border attribute of tbl to 2;
       tbl.setAttribute("border", "2");
+
     }

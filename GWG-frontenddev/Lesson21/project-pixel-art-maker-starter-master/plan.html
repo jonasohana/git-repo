@@ -4,6 +4,8 @@
     <title>Pixel Art Maker!</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
     <link rel="stylesheet" href="styles.css">
+    <!-- not support to use? -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 </head>
 <body>
     <h1>Lab: Pixel Art Maker</h1>
@@ -35,6 +37,15 @@ onclick="generate_table()">
 
 
 <script>
+
+
+    $(function(){
+        $( "td" ).click(function() {
+            console.log( "click() called " );
+        });
+
+
+    });
 </script>
 
 
