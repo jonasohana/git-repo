@@ -22,13 +22,6 @@ function generate_table() {
           row.appendChild(cell);
         // PJ 3/18 add id per cell 
 
-        // $( 'tr' ).on( 'click', 'ld',  function() {
-        //     console.log( $(this).cellIndex + cellText );
-
-        // });
-
-        // trList.first().children("a").toggleClass("href");
-        // trList.first().children("a").attr("href","#1");
         }
      
         // add the row to the end of the table body
@@ -41,5 +34,28 @@ function generate_table() {
       body.appendChild(tbl);
       // sets the border attribute of tbl to 2;
       tbl.setAttribute("border", "2");
+
+    // add click listener after created 
+    // $( "td" ).click(function() {
+    //     console.log( "click() called " );
+    // });
+
+    // $( 'td' ).on( 'click', function( evt ) {
+    //     evt.preventDefault();
+    //     console.log( 'You clicked a link!  on event:' + event.type + 
+    //     ' at X:' +  event.pageX + ' Y:' +  event.pageY
+    //     );
+    //     console.log("Cell index is: " + (this).cellIndex);
+
+        $("td").hover(
+            function() {
+              $(this).css('background-color', color);
+              $(this).css('color', color);
+            //   $(this).css('background-color', '#ff0000');
+            //   $(this).css('color', '#000000');
+            }
+        );
+
+    // });
 
     }
