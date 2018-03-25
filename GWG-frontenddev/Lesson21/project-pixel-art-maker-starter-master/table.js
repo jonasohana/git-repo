@@ -46,13 +46,21 @@ function generate_table() {
     //     ' at X:' +  event.pageX + ' Y:' +  event.pageY
     //     );
     //     console.log("Cell index is: " + (this).cellIndex);
-
+    colorPicker.addEventListener("input", updateFirst, false);
+    colorPicker.addEventListener("change", watchColorPicker, false);
+    
+    function watchColorPicker(event) {
+      document.querySelectorAll("p").forEach(function(p) {
+        p.style.color = event.target.value;
+      });
+    }
+    
         $("td").hover(
             function() {
-              $(this).css('background-color', color);
-              $(this).css('color', color);
-            //   $(this).css('background-color', '#ff0000');
-            //   $(this).css('color', '#000000');
+            //   $(this).css('background-color', color);
+            //   $(this).css('color', color);
+              $(this).css('background-color', '#ff0000');
+              $(this).css('color', '#000000');
             }
         );
 
