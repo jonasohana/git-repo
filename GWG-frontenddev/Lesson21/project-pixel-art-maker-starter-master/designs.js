@@ -71,21 +71,21 @@ function generate_table() {
       });
     }
     
-        // $("td").hover(
-        //     function() {
-        //     //   $(this).css('background-color', color);
-        //     //   $(this).css('color', color);
-        //       $(this).css('background-color', '#ff0000');
-        //       $(this).css('color', '#000000');
-        //     }
-        // );
+        $("td").hover(
+            function() {
+            //   $(this).css('background-color', color);
+            //   $(this).css('color', color);
+              $(this).css('background-color', '#ff0000');
+              $(this).css('color', '#000000');
+            }
+        );
 
-        $( 'td' ).on( 'click', function( evt ) {
-            evt.preventDefault();
-            console.log( 'You clicked a box at X:' +  event.pageX + ' Y:' +  event.pageY);
-            $(this).css('background-color', '#ff0000');
-            $(this).css('color', '#000000');
-        });
+        // $( 'td' ).on( 'click', function( evt ) {
+        //     evt.preventDefault();
+        //     console.log( 'You clicked a box at X:' +  event.pageX + ' Y:' +  event.pageY);
+        //     $(this).css('background-color', '#ff0000');
+        //     $(this).css('color', '#000000');
+        // });
     // });
 
     }
