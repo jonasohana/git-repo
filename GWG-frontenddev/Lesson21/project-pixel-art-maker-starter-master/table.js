@@ -46,8 +46,8 @@ function generate_table() {
     //     ' at X:' +  event.pageX + ' Y:' +  event.pageY
     //     );
     //     console.log("Cell index is: " + (this).cellIndex);
-    colorPicker.addEventListener("input", updateFirst, false);
-    colorPicker.addEventListener("change", watchColorPicker, false);
+    // colorPicker.addEventListener("input", updateFirst, false);
+    // colorPicker.addEventListener("change", watchColorPicker, false);
     
     function watchColorPicker(event) {
       document.querySelectorAll("p").forEach(function(p) {
