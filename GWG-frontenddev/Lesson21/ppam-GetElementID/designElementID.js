@@ -40,7 +40,27 @@ function makeGrid () {
 } // makeGrid()
 
 // set backgound color of clicked target within the table to current color / colorPicker
-table.addEventListener('click', function(evt) {
+table.addEventListener('mousedown', function(evt) {
+    // mousedown captures single td 
     evt.target.style.backgroundColor = color.value; 
     }
 ,false);
+
+
+
+// let flag = 0;
+// table.addEventListener("mousedown", function(){
+//     flag = 0;
+// }, false);
+// table.addEventListener("mousemove", function(){
+//     flag = 1;
+// }, false);
+// table.addEventListener("mouseup", function(evt){
+//     if(flag === 0){
+//         console.log("click");
+//         evt.target.style.backgroundColor = color.value; 
+//     }
+//     else if(flag === 1){
+//         console.log("drag");
+//     }
+// }, false);
