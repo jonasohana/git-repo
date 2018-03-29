@@ -45,7 +45,7 @@ console.log(inputWidth.value);
             evt.preventDefault();  
 
             // alert('hello alert');
-            console.log('hello');
+            console.log('submit');
             makeGrid ()
             }
     ,false);
@@ -55,22 +55,23 @@ console.log(inputWidth.value);
         table.innerHTML = "";
 
         // build a table using Node 'tr' and 'td'
+        let tr, td;
         for (h=0; h<inputHeight.value; h++) {
             // h = height 
-            var row = document.createElement('tr'); // create Node 'tr' table row
-            row.appendChild(row); // row ++
-            for (w=0; w<inputWidth.value;  w++); {
+            tr = document.createElement('tr'); // create Node 'tr' table row
+            table.appendChild(tr); // append the row and cell(s) to table
+            for (j=0; j<inputHeight.value; j++) {
                 // w = width 
-                var cell = document.createElement('td'); // create Node 'Td' - table cell 
-                row.appendChild(cell); // append cell(s) within a row 
+                td = document.createElement('td'); // create Node 'Td' - table cell 
+                tr.appendChild(td); // append cell(s) within a row 
             }
-            document.getElementById('pixelCanvas').appendChild(row); // append the row and cell(s) to table
+            // document.getElementById('pixelCanvas').appendChild(row); // append the row and cell(s) to table
         }
         console.log(table.innerHTML);
     } // makeGrid()
 
-// }
-// window.addEventListener("load", loaded, false);
+
+
 
 
 
