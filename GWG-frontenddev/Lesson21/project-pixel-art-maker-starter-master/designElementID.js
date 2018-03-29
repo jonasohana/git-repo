@@ -6,9 +6,9 @@ const inputWidth = document.getElementById('inputWidth');
 const sizePicker = document.getElementById("sizePicker");
 
 // display values to console.log
-console.log(color.value);
-console.log(inputHeight.value);
-console.log(inputWidth.value);
+// console.log(color.value);
+// console.log(inputHeight.value);
+// console.log(inputWidth.value);
 
 // set listener to sizePicker submit button
 sizePicker.addEventListener("submit", 
@@ -42,10 +42,8 @@ function makeGrid () {
     // console.log(table.innerHTML);
 } // makeGrid()
 
-// listen for cell click inside table
+// set backgound color of clicked target within the table to current color / colorPicker
 table.addEventListener('click', function(evt) {
-    // alert(evt.style.backgroundColor);
-    alert(evt.target.innerHTML);
-    // evt.style.backgroundColor = "yellow"; 
+    evt.target.style.backgroundColor = color.value; 
     }
 ,false);
