@@ -42,5 +42,9 @@ function makeGrid () {
 // set backgound color of clicked target within the table to current color / colorPicker
 table.addEventListener('click', function(evt) {
     evt.target.style.backgroundColor = color.value; 
+    console.log(evt.currentTarget);
+    console.log(evt.toElement);
+    console.log(evt.td);
+    console.log(evt.target);
     }
 ,false);
