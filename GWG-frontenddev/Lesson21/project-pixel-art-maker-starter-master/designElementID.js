@@ -3,75 +3,49 @@ const table = document.getElementById('pixelCanvas');
 const color = document.getElementById('colorPicker');
 const inputHeight = document.getElementById('inputHeight');
 const inputWidth = document.getElementById('inputWidth');
+const sizePicker = document.getElementById("sizePicker");
 
-
+// display values to console.log
 console.log(color.value);
 console.log(inputHeight.value);
 console.log(inputWidth.value);
 
-// function makeGrid () {
-//     // reset/clear  table
-//     table.innerHTML = "";
+// set listener to sizePicker submit button
+sizePicker.addEventListener("submit", 
+    function(evt) {
+        // unless explicitly handled, prevent default event handling 
+        evt.preventDefault();  
 
-//     // build a table using Node 'tr' and 'td'
-//     for (h=0; h<inputHeight.value; h++) {
-//         // h = height 
-//         var row = document.createElement('tr'); // create Node 'tr' table row
-//         for (w=0; w<inputWidth.value;  w++); {
-//             // w = width 
-//             var cell = document.createElement('td'); // create Node 'Td' - table cell 
-//             row.appendChild(cell); // append cell(s) within a row 
-//         }
-//         document.getElementById('pixelCanvas').appendChild(row); // append the row and cell(s) to table
-//     }
-//     console.log(table.innerHTML);
-// }; // makeGrid()
-
-
-// function loaded() {
-//     document.getElementById("sizePicker").addEventListener("submit",
-//             function(event) {
-//                 event.preventDefault();
-//                 // this.id will show "form"
-//                 alert(this.id);},
-//                 false);
-// }
-
-
-// function loaded() {
-    document.getElementById("sizePicker").addEventListener("submit", 
-        function(evt) {
-            // unless explicitly handled, prevent default event handling 
-            evt.preventDefault();  
-
-            // alert('hello alert');
-            console.log('submit');
-            makeGrid ()
-            }
-    ,false);
-
-    function makeGrid () {
-        // reset/clear  table
-        table.innerHTML = "";
-
-        // build a table using Node 'tr' and 'td'
-        let tr, td;
-        for (h=0; h<inputHeight.value; h++) {
-            // h = height 
-            tr = document.createElement('tr'); // create Node 'tr' table row
-            table.appendChild(tr); // append the row and cell(s) to table
-            for (j=0; j<inputHeight.value; j++) {
-                // w = width 
-                td = document.createElement('td'); // create Node 'Td' - table cell 
-                tr.appendChild(td); // append cell(s) within a row 
-            }
-            // document.getElementById('pixelCanvas').appendChild(row); // append the row and cell(s) to table
+        // alert('hello alert');
+        console.log('submit');
+        makeGrid ()
         }
-        console.log(table.innerHTML);
-    } // makeGrid()
+,false);
 
+// create grid 
+function makeGrid () {
+    // reset/clear  table
+    table.innerHTML = "";
 
+    // build a table using Node 'tr' and 'td'
+    let tr, td;
+    for (h=0; h<inputHeight.value; h++) {
+        // h = height 
+        tr = document.createElement('tr'); // create Node 'tr' table row
+        table.appendChild(tr); // append the row and cell(s) to table
+        for (j=0; j<inputWidth.value; j++) {
+            // w = width 
+            td = document.createElement('td'); // create Node 'Td' - table cell 
+            tr.appendChild(td); // append cell(s) within a row 
+        }
+    }
+    // console.log(table.innerHTML);
+} // makeGrid()
 
-
-
-
+// listen for cell click inside table
+table.addEventListener('click', function(evt) {
+    // alert(evt.style.backgroundColor);
+    alert(evt.target.innerHTML);
+    // evt.style.backgroundColor = "yellow"; 
+    }
+,false);
