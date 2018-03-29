@@ -1,3 +1,6 @@
+
+
+
 // set variables by reading ElementID 
 const table = document.getElementById('pixelCanvas');
 const color = document.getElementById('colorPicker');
@@ -10,14 +13,19 @@ const sizePicker = document.getElementById("sizePicker");
 // console.log(inputHeight.value);
 // console.log(inputWidth.value);
 
-// set listener to sizePicker submit button
-sizePicker.addEventListener("submit", 
+document.addEventListener("DOMContentLoaded", function(){
+    // Handler when the DOM is fully loaded
+    console.log('DOMContentLoaded');
+    // set listener to sizePicker submit button
+    sizePicker.addEventListener("submit", 
     function(e) {
         // unless explicitly handled, prevent default event handling 
         e.preventDefault();  
         makeGrid ()
         }
-,false);
+    ,false);
+  });
+
 
 // create grid 
 function makeGrid () {
